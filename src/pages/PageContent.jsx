@@ -10,6 +10,7 @@ const PageContent = () => {
       overflowY: "auto",
       padding: "20px",
     }}
+    className='bg-slate-200'
   >
     {AppRoutes}
   </div>

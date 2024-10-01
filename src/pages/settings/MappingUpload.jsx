@@ -187,7 +187,7 @@ const MappingUpload = () => {
     const link = document.createElement('a')
 
     link.rel = 'noopener noreferrer'
-    link.href = `${config.systemInfo.contextPath}/api/apps/${config.appName}/template.xlsx`
+    link.href = `${config.systemInfo.contextPath}/api/apps/${config.appName}/template.xlsx`.replace(' ','-').toLowerCase()
 
     link.click()
   }

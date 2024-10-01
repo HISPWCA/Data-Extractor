@@ -10,7 +10,7 @@ const Settings = () => {
 
   return (
     <div>
-      <TabBar>
+      <TabBar className='bg-slate-200'>
         <Tab onClick={() => setSelectedTab(DEFAULT_TAB)}>
           Mappings Management
         </Tab>

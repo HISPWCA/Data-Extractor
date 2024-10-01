@@ -174,16 +174,16 @@ const DataExport = () => {
           ?.filter((t) =>
             selectedAttribute && selectedAttributeValue
               ? t.attributes?.filter(
-                  (a) =>
-                    a.attribute === selectedAttribute.id &&
-                    a.value === selectedAttributeValue
-                )?.length > 0
+                (a) =>
+                  a.attribute === selectedAttribute.id &&
+                  a.value === selectedAttributeValue
+              )?.length > 0
               : true
           )
           ?.filter((t) =>
             selectedTypeOU === "DESCENDANTS" && selectedOrganisationUnitLevel
               ? organisationUnits.find((ou) => ou.id === t.orgUnit)?.level ===
-                selectedOrganisationUnitLevel?.level
+              selectedOrganisationUnitLevel?.level
               : true
           )
           ?.reduce((prev, curr) => {
@@ -338,36 +338,36 @@ const DataExport = () => {
                 } else if (field?.type === "ATTRIBUTE") {
                   const attributeValue = field?.field
                     ? curr.attributes?.find((a) => a.attribute === field?.id)?.[
-                        field?.field
-                      ] || ""
+                    field?.field
+                    ] || ""
                     : curr.attributes?.find((a) => a.attribute === field?.id)
-                        ?.value || "";
+                      ?.value || "";
 
                   const value =
                     field?.formula && field?.formula?.startsWith("FORMAT")
                       ? dateFormatter(
-                          attributeValue,
-                          field?.formula?.split("|")[1]?.toUpperCase() ||
-                            "DD/MM/YYYY"
-                        )
+                        attributeValue,
+                        field?.formula?.split("|")[1]?.toUpperCase() ||
+                        "DD/MM/YYYY"
+                      )
                       : getOptionValue(attributeValue);
 
                   element[field.output] = value;
                 } else if (field?.type === "DATA_ELEMENT") {
                   const eventValue = field?.field
                     ? event.dataValues.find(
-                        (dataValue) => dataValue.dataElement === field?.id
-                      )[field?.field] || ""
+                      (dataValue) => dataValue.dataElement === field?.id
+                    )[field?.field] || ""
                     : event.dataValues.find(
-                        (dataValue) => dataValue.dataElement === field?.id
-                      )?.value || "";
+                      (dataValue) => dataValue.dataElement === field?.id
+                    )?.value || "";
                   const value =
                     field?.formula && field?.formula?.startsWith("FORMAT")
                       ? dateFormatter(
-                          eventValue,
-                          field?.formula?.split("|")[1]?.toUpperCase() ||
-                            "DD/MM/YYYY"
-                        )
+                        eventValue,
+                        field?.formula?.split("|")[1]?.toUpperCase() ||
+                        "DD/MM/YYYY"
+                      )
                       : getOptionValue(eventValue);
 
                   element[field.output] = value;
@@ -516,13 +516,13 @@ const DataExport = () => {
     );
 
   return (
-    <div className="m-1 p-2 bg-slate-200 border w-[60%]">
-      {data && data?.mappings && data?.mappings.length > 0 && (
-        <div className="p-1 border w-full">
+    <div  className="m-1 w-[30%]">
+      <div>
+        <div className="p-1 border-2">
           <div className="flex justify-between">
             <div>Select a Mapping</div>
             {selectedMapping && (
-              <div className="border p-1 rounded bg-slate-500 text-white">
+              <div className="border-2 p-1 rounded bg-slate-500 text-white">
                 {data?.mappings.find(
                   (mapping) => mapping.id === selectedMapping
                 )?.program?.name || "No Mapping Selected yet"}
@@ -532,6 +532,7 @@ const DataExport = () => {
 
           <SingleSelect
             filterable
+            disabled={data && data?.mappings && data?.mappings.length === 0}
             selected={selectedMapping}
             onChange={({ selected }) => setSelectedMapping(selected)}
           >
@@ -543,186 +544,225 @@ const DataExport = () => {
               />
             ))}
           </SingleSelect>
-        </div>
-      )}
 
-      {me &&
-        me.me &&
-        me.me.organisationUnits &&
-        organisationUnits &&
-        organisationUnits.length > 0 && (
-          <>
-            <div className="p-1 border">
-              <div>Select an Organisation Unit</div>
-              <OrganisationUnitsTree
-                meOrgUnitId={me.me.organisationUnits[0]?.id}
-                orgUnits={organisationUnits || []}
-                currentOrgUnits={selectedOrgUnit}
-                setCurrentOrgUnits={setSelectedOrgUnit}
-                onChange={handleOnOrgUnitChange}
-              />
+          {data && data?.mappings && data?.mappings.length === 0 && (
+            <div className="text-sm italic text-red-900 text-left my-2">
+              No mapping available yet! Please import a new mapping file in the settings menu first
             </div>
-          </>
-        )}
-
-      <div className="my-2">
-        <div>
-          <Radio
-            label="Load data from selected organisation unit"
-            onChange={() => {
-              setSelectedTypeOU("SELECTED");
-            }}
-            checked={selectedTypeOU === "SELECTED"}
-            value="SELECTED"
-          />
+          )}
         </div>
-        <div>
-          <Radio
-            label="Load all data based on selected level"
-            onChange={() => {
-              setSelectedTypeOU("DESCENDANTS");
-            }}
-            checked={selectedTypeOU === "DESCENDANTS"}
-            value="DESCENDANTS"
-          />
-        </div>
-      </div>
 
-      {selectedTypeOU === "DESCENDANTS" && selectedOrgUnit && (
-        <div className="my-3 ">
-          <div>Select organisation unit level </div>
-          <SingleSelect
-            selected={selectedOrganisationUnitLevel?.id}
-            onChange={handleSelectLevel}
-          >
-            {levels
-              ?.filter((level) =>
-                selectedTypeOU === "DESCENDANTS"
-                  ? level.level >= selectedOrgUnit?.level
-                  : true
-              )
-              ?.map((level) => (
-                <SingleSelectOption label={level.name} value={level.id} />
-              ))}
-          </SingleSelect>
-        </div>
-      )}
+        {/* {data && data?.mappings && data?.mappings.length > 0 && (
+          <div className="p-1 border-2 w-full">
+            <div className="flex justify-between">
+              <div>Select a Mapping</div>
+              {selectedMapping && (
+                <div className="border-2 p-1 rounded bg-slate-500 text-white">
+                  {data?.mappings.find(
+                    (mapping) => mapping.id === selectedMapping
+                  )?.program?.name || "No Mapping Selected yet"}
+                </div>
+              )}
+            </div>
 
-      {programAttributes && programAttributes?.length > 0 && (
-        <div className="mt-2 p-1 border flex w-full items-center gap-4">
-          <div className="w-full ">
-            <div>Attributes filter</div>
             <SingleSelect
-              selected={selectedAttribute?.id}
-              onChange={handleSelectAttribute}
               filterable
+              selected={selectedMapping}
+              onChange={({ selected }) => setSelectedMapping(selected)}
             >
-              {programAttributes?.map((attribute) => (
+              {data?.mappings.map((mapping) => (
                 <SingleSelectOption
-                  label={attribute.displayName}
-                  value={attribute.id}
+                  key={mapping.id}
+                  value={mapping.id}
+                  label={mapping.name}
                 />
               ))}
             </SingleSelect>
           </div>
+        )} */}
 
-          <div className="w-full">
-            <InputField
-              onChange={({ value }) => setSelectedAttributeValue(value)}
-              value={selectedAttributeValue}
-              label="Attribute value"
+        {me &&
+          me.me &&
+          me.me.organisationUnits &&
+          organisationUnits &&
+          organisationUnits.length > 0 && (
+            <>
+              <div className="p-1 mt-2 border-2">
+                <div>Select an Organisation Unit</div>
+                <OrganisationUnitsTree
+                  meOrgUnitId={me.me.organisationUnits[0]?.id}
+                  orgUnits={organisationUnits || []}
+                  currentOrgUnits={selectedOrgUnit}
+                  setCurrentOrgUnits={setSelectedOrgUnit}
+                  onChange={handleOnOrgUnitChange}
+                />
+              </div>
+            </>
+          )}
+
+        <div className="my-2 border-2">
+          <div>
+            <Radio
+              label="Load data from selected organisation unit"
+              onChange={() => {
+                setSelectedTypeOU("SELECTED");
+              }}
+              checked={selectedTypeOU === "SELECTED"}
+              value="SELECTED"
+            />
+          </div>
+
+          <div>
+            <Radio
+              label="Load all data based on selected level"
+              onChange={() => {
+                setSelectedTypeOU("DESCENDANTS");
+              }}
+              checked={selectedTypeOU === "DESCENDANTS"}
+              value="DESCENDANTS"
             />
           </div>
         </div>
-      )}
 
-      <div className="p-1 border">
-        <div>Select a Date Range</div>
-        <DateRangePicker
-          onChange={(item) => handleDateRangeSelection(item)}
-          showSelectionPreview={true}
-          moveRangeOnFirstSelection={false}
-          months={2}
-          ranges={dateRange}
-          direction="horizontal"
-        />
-      </div>
-
-      <div className="p-1 border bg-slate-500- flex">
-        <Space direction="vertical">
-          <Space wrap>
-            <Dropdown
-              menu={{
-                items: [
-                  {
-                    key: "1",
-                    label: (
-                      <Button
-                        block
-                        loading={loading}
-                        disabled={!selectedOrgUnit || !selectedMapping}
-                        ariaLabel="Button"
-                        onClick={exportCSVData}
-                        primary
-                        value="default"
-                      >
-                        {loading ? "Generating CSV File" : "Generic CSV File"}
-                      </Button>
-                    ),
-                  },
-                  {
-                    key: "2",
-                    label: (
-                      <Button
-                        block
-                        loading={loading}
-                        disabled={!selectedOrgUnit || !selectedMapping}
-                        ariaLabel="Button"
-                        onClick={exportExcelData}
-                        primary
-                        value="default"
-                      >
-                        {loading
-                          ? "Generating Excel File"
-                          : "Generic Excel File"}
-                      </Button>
-                    ),
-                  },
-                  {
-                    key: "3",
-                    label: (
-                      <Button
-                        block
-                        loading={loading}
-                        disabled={!selectedOrgUnit || !selectedMapping}
-                        ariaLabel="Button"
-                        onClick={exportEmpresIData}
-                        primary
-                        value="default"
-                      >
-                        {loading
-                          ? "Generating Empres-i File"
-                          : "Empres-i Specific"}
-                      </Button>
-                    ),
-                  },
-                ],
-              }}
-              placement="bottom"
+        {selectedTypeOU === "DESCENDANTS" && selectedOrgUnit && (
+          <div className="my-3 border-2">
+            <div>Select organisation unit level </div>
+            <SingleSelect
+              selected={selectedOrganisationUnitLevel?.id}
+              onChange={handleSelectLevel}
             >
-              <Button
-                loading={loadingExport}
-                disabled={!selectedOrgUnit || !selectedMapping}
-                ariaLabel="Button"
-                primary
-                value="default"
+              {levels
+                ?.filter((level) =>
+                  selectedTypeOU === "DESCENDANTS"
+                    ? level.level >= selectedOrgUnit?.level
+                    : true
+                )
+                ?.map((level) => (
+                  <SingleSelectOption label={level.name} value={level.id} />
+                ))}
+            </SingleSelect>
+          </div>
+        )}
+
+        {programAttributes && programAttributes?.length > 0 && (
+          <div className="mt-2 p-1 border-2 flex w-full items-center gap-4">
+            <div className="w-full ">
+              <div>Attributes filter</div>
+              <SingleSelect
+                selected={selectedAttribute?.id}
+                onChange={handleSelectAttribute}
+                filterable
               >
-                {loading ? "Processing .." : "Export Data"}
-              </Button>
-            </Dropdown>
-          </Space>
-        </Space>
+                {programAttributes?.map((attribute) => (
+                  <SingleSelectOption
+                    label={attribute.displayName}
+                    value={attribute.id}
+                  />
+                ))}
+              </SingleSelect>
+            </div>
+
+            <div className="w-full">
+              <InputField
+                onChange={({ value }) => setSelectedAttributeValue(value)}
+                value={selectedAttributeValue}
+                label="Attribute value"
+              />
+            </div>
+          </div>
+        )}
       </div>
+      <>
+        <div className="p-2 border-2">
+          <div>Select a Date Range</div>
+
+          <DateRangePicker
+            onChange={(item) => handleDateRangeSelection(item)}
+            showSelectionPreview={true}
+            moveRangeOnFirstSelection={false}
+            months={2}
+            ranges={dateRange}
+            direction="horizontal"
+          />
+        </div>
+
+        <div className="p-1 flex">
+          <Space direction="vertical">
+            <Space wrap>
+              <Dropdown
+              disabled={!selectedOrgUnit || !selectedMapping}
+                menu={{
+                  items: [
+                    {
+                      key: "1",
+                      label: (
+                        <Button
+                          block
+                          loading={loading}
+                          disabled={!selectedOrgUnit || !selectedMapping}
+                          ariaLabel="Button"
+                          onClick={exportCSVData}
+                          primary
+                          value="default"
+                        >
+                          {loading ? "Generating CSV File" : "Generic CSV File"}
+                        </Button>
+                      ),
+                    },
+                    {
+                      key: "2",
+                      label: (
+                        <Button
+                          block
+                          loading={loading}
+                          disabled={!selectedOrgUnit || !selectedMapping}
+                          ariaLabel="Button"
+                          onClick={exportExcelData}
+                          primary
+                          value="default"
+                        >
+                          {loading
+                            ? "Generating Excel File"
+                            : "Generic Excel File"}
+                        </Button>
+                      ),
+                    },
+                    {
+                      key: "3",
+                      label: (
+                        <Button
+                          block
+                          loading={loading}
+                          disabled={!selectedOrgUnit || !selectedMapping}
+                          ariaLabel="Button"
+                          onClick={exportEmpresIData}
+                          primary
+                          value="default"
+                        >
+                          {loading
+                            ? "Generating Empres-i File"
+                            : "Empres-i Specific"}
+                        </Button>
+                      ),
+                    },
+                  ],
+                }}
+                placement="bottom"
+              >
+                <Button
+                  loading={loadingExport}
+                  disabled={!selectedOrgUnit || !selectedMapping}
+                  ariaLabel="Button"
+                  primary
+                  value="default"
+                >
+                  {loading ? "Processing .." : "Export Data"}
+                </Button>
+              </Dropdown>
+            </Space>
+          </Space>
+        </div>
+      </>
     </div>
   );
 };
