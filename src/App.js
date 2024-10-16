@@ -11,6 +11,8 @@ import Method from './utils/app.methods'
 import 'react-date-range/dist/styles.css'
 import 'react-date-range/dist/theme/default.css'
 import './App.css'
+import './input.css'
+import './tailwind.css'
 
 
 const App = () => {

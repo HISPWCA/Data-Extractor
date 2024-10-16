@@ -14,7 +14,7 @@
     "@dhis2/cli-app-scripts": "^11.0.0",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13"
+    "tailwindcss": "^3.4.14"
   },
   "dependencies": {
     "@ant-design/icons": "^5.3.1",
