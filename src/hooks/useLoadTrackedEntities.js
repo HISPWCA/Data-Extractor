@@ -1,33 +1,39 @@
-import { useDataQuery } from "@dhis2/app-runtime";
+import { useDataQuery } from '@dhis2/app-runtime'
+import { DEFAULT_TRACKED_ENTITIES_FIELDS } from '../utils/apiFields.defaults'
 
 const TRACKED_ENTITIES_QUERY = {
   trackedEntities: {
-    resource: "tracker/trackedEntities",
-    params: ({ program, orgUnit, startDate, endDate , ouMode}) => ({
-      fields: '*',
+    resource: 'tracker/trackedEntities',
+    params: ({
+      program,
+      orgUnit,
+      startDate,
+      endDate,
+      ouMode,
+      trackedEntitiesFields,
+    }) => ({
+      fields: trackedEntitiesFields || DEFAULT_TRACKED_ENTITIES_FIELDS,
       program,
       orgUnit,
       eventOccuredAfter: startDate,
       eventOccuredBefore: endDate,
       skipPaging: true,
-      // eventStatus: 'COMPLETED'
-      ouMode: ouMode ? ouMode : 'SELECTED'
+      ouMode: ouMode ? ouMode : 'SELECTED',
     }),
   },
-};
+}
 
-const useLoadTrackedEntities = (program, orgUnit, startDate, endDate, ouMode) => {
+const useLoadTrackedEntities = () => {
   const { loading, error, data, refetch } = useDataQuery(TRACKED_ENTITIES_QUERY, {
-    variables: { program, orgUnit, startDate, endDate , ouMode },
     lazy: true,
-  });
+  })
 
   return {
     data,
     error,
     loading,
     refetch,
-  };
-};
+  }
+}
 
-export default useLoadTrackedEntities;
+export default useLoadTrackedEntities

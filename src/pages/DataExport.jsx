@@ -46,6 +46,7 @@ import useShowAlerts from "../hooks/useShowAlerts";
 import useOrgUnitLevels from "../hooks/useOrgUnitLevels";
 import useLoadOrganisationUnitLevels from "../hooks/useLoadOrganisationUnitLevels";
 import useLoadProgramAttributes from "../hooks/useLoadProgramAttributes";
+import useLoadApiFields from "../hooks/useLoadApiFields";
 
 const dateFormatter = (date, format) => {
   const value = dayjs(date).format(format);
@@ -57,6 +58,7 @@ const DataExport = () => {
   const config = useConfig();
   const { show, hide } = useShowAlerts();
   const { data } = useLoadMappings(config.appName);
+  const { trackedEntitiesFields } = useLoadApiFields(config.appName);
 
   const [selectedMapping, setSelectedMapping] = useState("");
   const [dateRange, setDateRange] = useState([
@@ -125,6 +127,7 @@ const DataExport = () => {
         startDate: dateFormatter(dateObject.startDate, "YYYY-MM-DD"),
         endDate: dateFormatter(dateObject.endDate, "YYYY-MM-DD"),
         ouMode: selectedTypeOU || "SELECTED",
+        trackedEntitiesFields,
       });
 
       if (response?.trackedEntities?.instances?.length === 0) {

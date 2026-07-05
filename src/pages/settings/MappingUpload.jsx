@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { format } from 'date-fns';
-import { FaTrash } from 'react-icons/fa';
+import { FaDownload, FaTrash } from 'react-icons/fa';
 import { v4 as uuidv4 } from 'uuid';
 import * as XLSX from 'xlsx';
 
@@ -31,6 +31,12 @@ import useLoadPrograms from '../../hooks/useLoadPrograms';
 import useMappingsMutation from '../../hooks/useMappingsMutation';
 import useShowAlerts from '../../hooks/useShowAlerts';
 import Method from '../../utils/app.methods';
+import {
+  exportMappingToExcel,
+  MAPPING_COLUMNS,
+  OPTIONS_COLUMNS,
+  parseSheetRows,
+} from '../../utils/mappingExcel';
 
 
 const MappingUpload = () => {
@@ -67,60 +73,13 @@ const MappingUpload = () => {
         const optionsSheet = workbook.Sheets[optionsSheetName]
         const optionsData = XLSX.utils.sheet_to_json(optionsSheet, { header: 1 })
 
-        const options = optionsData.filter((_, index) => index !== 0).map(row => {
-          const currentRow = {}
-
-          for (let j = 0; j < row.length; j++) {
-            if (j === 0) {
-              currentRow['EMPRESS Field'] = row[j]
-            }
-            if (j === 1) {
-              currentRow['D2 Field'] = row[j]
-            }
-            if (j === 2) {
-              currentRow['EMPRESS Code'] = row[j]
-            }
-            if (j === 3) {
-              currentRow['D2 Name'] = row[j]
-            }
-            if (j === 4) {
-              currentRow['D2 Code'] = row[j]
-            }
-            if (j === 5) {
-              currentRow['D2 UID'] = row[j]
-            }
-          }
-
-          return currentRow
-        })
+        const options = parseSheetRows(optionsData, OPTIONS_COLUMNS)
 
         const mappingsSheetName = workbook.SheetNames[workbook.SheetNames.indexOf(mappingTab)]
         const mappingsSheet = workbook.Sheets[mappingsSheetName]
         const mappingsData = XLSX.utils.sheet_to_json(mappingsSheet, { header: 1 })
 
-        const mappings = mappingsData.filter((_, index) => index !== 0).map(row => {
-          const currentRow = {}
-
-          for (let j = 0; j < row.length; j++) {
-            if (j === 0) {
-              currentRow['EMPRESS Field'] = row[j]
-            }
-            if (j === 1) {
-              currentRow['D2 Field'] = row[j]
-            }
-            if (j === 2) {
-              currentRow['D2 STAGE'] = row[j]
-            }
-            if (j === 3) {
-              currentRow['Formula'] = row[j]
-            }
-            if (j === 4) {
-              currentRow['Field'] = row[j]
-            }
-          }
-
-          return currentRow
-        })
+        const mappings = parseSheetRows(mappingsData, MAPPING_COLUMNS)
 
         const content = [...data.mappings, {
           id: uuidv4(),
@@ -190,6 +149,24 @@ const MappingUpload = () => {
     link.href = `${config.systemInfo.contextPath}/api/apps/${config.appName}/template.xlsx`.replace(' ','-').toLowerCase()
 
     link.click()
+  }
+
+  const handleMappingExport = (mapping) => {
+    try {
+      exportMappingToExcel(mapping)
+
+      show({
+        message: "Mapping exported successfully",
+        type: { success: true },
+      })
+      setTimeout(hide, 1000)
+    } catch (error) {
+      show({
+        message: "An error occurred while exporting the mapping",
+        type: { critical: true },
+      })
+      setTimeout(hide, 1000)
+    }
   }
 
   return (
@@ -304,9 +281,18 @@ const MappingUpload = () => {
                       {format(mapping.createdAt, 'yyyy-MM-dd')}
                     </TableCell>
                     <TableCell>
-                      <Tooltip content={`Delete ${mapping.name}`} >
-                        <FaTrash className='cursor-pointer text-red-800' onClick={() => setOpenDeletionPopover(true)} />
-                      </Tooltip>
+                      <div className='flex items-center gap-3'>
+                        <Tooltip content={`Export ${mapping.name} to Excel`}>
+                          <FaDownload
+                            className='cursor-pointer text-blue-800'
+                            onClick={() => handleMappingExport(mapping)}
+                          />
+                        </Tooltip>
+
+                        <Tooltip content={`Delete ${mapping.name}`} >
+                          <FaTrash className='cursor-pointer text-red-800' onClick={() => setOpenDeletionPopover(true)} />
+                        </Tooltip>
+                      </div>
 
                       {mapping && openDeletionPopover && (
                         <Modal onClose={() => processing ? setOpenDeletionPopover(true) : setOpenDeletionPopover(false)} small position="middle">
