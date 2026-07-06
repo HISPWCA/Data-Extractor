@@ -1,10 +1,12 @@
 import React from "react";
+import { RELEASE_NOTES } from "../utils/releaseNotes";
 
 export default () => {
   return (
     <main>
-      <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-start h-screen md:px-8">
-        <div className="max-w-lg mx-auto space-y-3 text-center">
+      <div className="max-w-screen-xl mx-auto px-4 py-8 md:px-8">
+        <div className="max-w-2xl mx-auto space-y-8">
+          <div className="space-y-3 text-center">
           <h3 className="text-gray-800 text-4xl font-semibold sm:text-5xl">
             Data Extractor
           </h3>
@@ -33,6 +35,26 @@ export default () => {
               </svg>
             </a>
           </p>
+          </div>
+
+          <section className="text-left">
+            <h4 className="text-gray-800 text-xl font-semibold mb-4">Release notes</h4>
+            <div className="space-y-6">
+              {RELEASE_NOTES.map(({ version, date, items }) => (
+                <article key={version} className="rounded-lg bg-white p-4 shadow-sm">
+                  <header className="mb-2 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                    <h5 className="text-gray-800 font-medium">Version {version}</h5>
+                    <span className="text-sm text-gray-500">{date}</span>
+                  </header>
+                  <ul className="list-disc space-y-1 pl-5 text-gray-600">
+                    {items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          </section>
         </div>
       </div>
     </main>

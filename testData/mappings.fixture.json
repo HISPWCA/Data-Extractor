@@ -1,0 +1,2385 @@
+[
+  {
+    "id": "ff1ff1d4-a040-439b-9999-5d20e8d53416",
+    "name": "Meninigite",
+    "options": [
+      {
+        "D2 UID": "aOKjjS1cZiY",
+        "D2 Code": "Female",
+        "D2 Name": "Féminin",
+        "D2 Field": "oindugucx72",
+        "EMPRESS Code": "Féminin",
+        "EMPRESS Field": "Sexe à la naissance"
+      },
+      {
+        "D2 UID": "At0GSilk7nY",
+        "D2 Code": "Male",
+        "D2 Name": "Masculin",
+        "D2 Field": "oindugucx72",
+        "EMPRESS Code": "Masculin",
+        "EMPRESS Field": "Sexe à la naissance"
+      },
+      {
+        "D2 UID": "aOKjjS1cZiY",
+        "D2 Code": "TI",
+        "D2 Name": "TI inoculé",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "TI inoculé",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "At0GSilk7nY",
+        "D2 Code": "CHU-KARA",
+        "D2 Name": "CHU-KARA",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "CHU-KARA",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "atVapiXD4QW",
+        "D2 Code": "HI",
+        "D2 Name": "HI",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "HI",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "Ax1qCZf27pp",
+        "D2 Code": "15C",
+        "D2 Name": "15C",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "15C",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "b1DUCuHuVKd",
+        "D2 Code": "PNLT CHU SO",
+        "D2 Name": "PNLT CHU SO",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "PNLT CHU SO",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "bf61cv4IceG",
+        "D2 Code": "NmA",
+        "D2 Name": "NmA",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "NmA",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "BM2G8I7PtjQ",
+        "D2 Code": "NmW",
+        "D2 Name": "WNm",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "WNm",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "BMzihe4Rnq1",
+        "D2 Code": 8,
+        "D2 Name": 8,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 8,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "BxMAmql162T",
+        "D2 Code": "Not done",
+        "D2 Name": "Non fait",
+        "D2 Field": "IiInVS6fKH3",
+        "EMPRESS Code": "Non fait",
+        "EMPRESS Field": "District - Résultat de l'agglutination du latex"
+      },
+      {
+        "D2 UID": "bZ4GrqqrOPi",
+        "D2 Code": "CHR ATAKPAME",
+        "D2 Name": "CHR ATAKPAME",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "CHR ATAKPAME",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "C2C7kQnYQRX",
+        "D2 Code": "24A/24B/24F",
+        "D2 Name": "24A/24B/24F",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "24A/24B/24F",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "C7X9BEo0Gc1",
+        "D2 Code": "NegativePCR",
+        "D2 Name": "Suspect, PCR négative/incluse",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Suspect, PCR négative/incluse",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "CgEKAoiM4G7",
+        "D2 Code": "CHR DAPAONG",
+        "D2 Name": "CHR DAPAONG",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "CHR DAPAONG",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "ClvEmNbP4Vy",
+        "D2 Code": "7C/7B/41",
+        "D2 Name": "7C/7B/40",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "7C/7B/40",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "cpVhuOzKIh3",
+        "D2 Code": "GPD",
+        "D2 Name": "DGP",
+        "D2 Field": "jo9nGjYxvxJ",
+        "EMPRESS Code": "DGP",
+        "EMPRESS Field": "District - Résultat de la coloration de Gram"
+      },
+      {
+        "D2 UID": "cpWOMrGG6AB",
+        "D2 Code": "Hib",
+        "D2 Name": "Hib",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "Hib",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "cr9QQS90169",
+        "D2 Code": "CHR TSEVIE",
+        "D2 Name": "CHR TSEVIE",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "CHR TSEVIE",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "cwwGtmRjhLA",
+        "D2 Code": "NmY",
+        "D2 Name": "NmY",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "NmY",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "cX4iAyMyoVg",
+        "D2 Code": "C",
+        "D2 Name": "Contaminé",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "Contaminé",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "cX740njfjyc",
+        "D2 Code": "ND",
+        "D2 Name": "Non effectué",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "Non effectué",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "da5t3sJxQvi",
+        "D2 Code": "GND",
+        "D2 Name": "DGN",
+        "D2 Field": "jo9nGjYxvxJ",
+        "EMPRESS Code": "DGN",
+        "EMPRESS Field": "District - Résultat de la coloration de Gram"
+      },
+      {
+        "D2 UID": "DdrtnFJm77K",
+        "D2 Code": "Regional Institut Pasteur Dakar",
+        "D2 Name": "Regional Institut Pasteur Dakar",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "Regional Institut Pasteur Dakar",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "DNFjQrq01mB",
+        "D2 Code": "NotAFP",
+        "D2 Name": "Non PFA",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Non PFA",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "dsFF6f4yZZq",
+        "D2 Code": "7F/7A",
+        "D2 Name": "7F/7A",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "7F/7A",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "e1FqzvHt7qs",
+        "D2 Code": "Inpatient",
+        "D2 Name": "Hospitalisé",
+        "D2 Field": "pXGhYbf5cAP",
+        "EMPRESS Code": "Hospitalisé",
+        "EMPRESS Field": "Patients hospitalisés/non hospitalisés"
+      },
+      {
+        "D2 UID": "e3i8OItHQ7L",
+        "D2 Code": "6C/6D",
+        "D2 Name": "6C/6D",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "6C/6D",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "e927wGwxOIf",
+        "D2 Code": "traitement",
+        "D2 Name": "Sous traitement",
+        "D2 Field": "BoIxN7Kfj07",
+        "EMPRESS Code": "Sous traitement",
+        "EMPRESS Field": "Devenir du patient"
+      },
+      {
+        "D2 UID": "EEXv8AdoZ8s",
+        "D2 Code": "Other",
+        "D2 Name": "Autre",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Autre",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "EKy0g2twqYI",
+        "D2 Code": "C",
+        "D2 Name": "Contaminé",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Contaminé",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "eM89HmFTF3W",
+        "D2 Code": "not done",
+        "D2 Name": "Pas fait",
+        "D2 Field": "LjgDKL4jm5K",
+        "EMPRESS Code": "Pas fait",
+        "EMPRESS Field": "District - Aspect de l'échantillon / examen macroscopique (LCR)"
+      },
+      {
+        "D2 UID": "ENcflZoXl8H",
+        "D2 Code": "9V",
+        "D2 Name": "9V",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "9V",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "enu9aXVLPzJ",
+        "D2 Code": 3,
+        "D2 Name": 3,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 3,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "eoWDNZ7Ni6D",
+        "D2 Code": "NotDone",
+        "D2 Name": "Non testé",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Non testé",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "eSSRUiw41oM",
+        "D2 Code": "Isolate",
+        "D2 Name": "Isoler",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Isoler",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "EUevWsFNccI",
+        "D2 Code": "Bloody",
+        "D2 Name": "Sanguinolent",
+        "D2 Field": "LjgDKL4jm5K",
+        "EMPRESS Code": "Sanguinolent",
+        "EMPRESS Field": "District - Aspect de l'échantillon / examen macroscopique (LCR)"
+      },
+      {
+        "D2 UID": "evF9tQ44mrX",
+        "D2 Code": "19A",
+        "D2 Name": "19A",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "19A",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "EVYvzEXNFUK",
+        "D2 Code": "S",
+        "D2 Name": "Sensible",
+        "D2 Field": "jXANIQUFvqc",
+        "EMPRESS Code": "Sensible",
+        "EMPRESS Field": "District - Sensibilité à la ceftriaxone"
+      },
+      {
+        "D2 UID": "ewuzmME1qFp",
+        "D2 Code": "National",
+        "D2 Name": "National",
+        "D2 Field": "VxdyTZMq4fz",
+        "EMPRESS Code": "National",
+        "EMPRESS Field": "Suivi / niveau laboratoire"
+      },
+      {
+        "D2 UID": "eYfEd3raSPZ",
+        "D2 Code": "9N",
+        "D2 Name": "9N",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "9N",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "F1eM5WiVzJi",
+        "D2 Code": "15B/15C",
+        "D2 Name": "15B/15C",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "15B/15C",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "f2KO0mhCEIQ",
+        "D2 Code": "NmB",
+        "D2 Name": "NmB",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "NmB",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "Fh7dnfV427M",
+        "D2 Code": "17F",
+        "D2 Name": "17F",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "17F",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "fLdpFIZ1ZdG",
+        "D2 Code": 34,
+        "D2 Name": 34,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 34,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "fptrzTFUsJd",
+        "D2 Code": "12F",
+        "D2 Name": "12F",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "12F",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "fXwQZkiKxcS",
+        "D2 Code": "Pleural",
+        "D2 Name": "Liquide pleural",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Liquide pleural",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "fY6DsKfymLW",
+        "D2 Code": "9V/9A",
+        "D2 Name": "9V/9A",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "9V/9A",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "G3htfTNUFbT",
+        "D2 Code": "11A/11D",
+        "D2 Name": "11A/11D",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "11A/11D",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "gBpABR936vr",
+        "D2 Code": "6A/6B",
+        "D2 Name": "6A/6B",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "6A/6B",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "gcDzU1Pxk7h",
+        "D2 Code": "35B",
+        "D2 Name": "35B",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "35B",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "gCgVCpQmqFj",
+        "D2 Code": "aVDPV",
+        "D2 Name": "aVDPV",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "aVDPV",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "gkbcXWEuUOM",
+        "D2 Code": "15A/15F",
+        "D2 Name": "15A/15F",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "15A/15F",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "GL0GIRTnjdm",
+        "D2 Code": "Urine",
+        "D2 Name": "Urine",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Urine",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "gL5y922WHmG",
+        "D2 Code": "Outpatient",
+        "D2 Name": "Soins ambulatoires",
+        "D2 Field": "pXGhYbf5cAP",
+        "EMPRESS Code": "Soins ambulatoires",
+        "EMPRESS Field": "Patients hospitalisés/non hospitalisés"
+      },
+      {
+        "D2 UID": "gOO7hoOZEFt",
+        "D2 Code": "Alive",
+        "D2 Name": "Vivant",
+        "D2 Field": "BoIxN7Kfj07",
+        "EMPRESS Code": "Vivant",
+        "EMPRESS Field": "Devenir du patient"
+      },
+      {
+        "D2 UID": "grHsIc0auCH",
+        "D2 Code": "Turbid",
+        "D2 Name": "Turbid",
+        "D2 Field": "LjgDKL4jm5K",
+        "EMPRESS Code": "Turbid",
+        "EMPRESS Field": "District - Aspect de l'échantillon / examen macroscopique (LCR)"
+      },
+      {
+        "D2 UID": "H385TtNMUUE",
+        "D2 Code": "H",
+        "D2 Name": "H. influenzae (non-b)",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "H. influenzae (non-b)",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "HBfAUIWWlcB",
+        "D2 Code": "WNile",
+        "D2 Name": "W Nile",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "W Nile",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "HcWcCwTU93Q",
+        "D2 Code": "Non PCV",
+        "D2 Name": "Non sérotype PCV 13",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "Non sérotype PCV 13",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "HE9XdHEjvLQ",
+        "D2 Code": "Regional Noguchi",
+        "D2 Name": "Regional Noguchi (NMIMR)",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "Regional Noguchi (NMIMR)",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "HhUVu28i3an",
+        "D2 Code": "Negative",
+        "D2 Name": "Négatif",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "Négatif",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "HJ6I8SI8FWc",
+        "D2 Code": "Spn NT",
+        "D2 Name": "Sérotype Spn NT / valeur élevée du Ct lytA",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "Sérotype Spn NT / valeur élevée du Ct lytA",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "hp5Vp3Mvd4N",
+        "D2 Code": "NmB",
+        "D2 Name": "NmB",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "NmB",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "Hpg7ql1Vckg",
+        "D2 Code": "YF",
+        "D2 Name": "Fièvre jaune",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Fièvre jaune",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "hW1lpDefYXo",
+        "D2 Code": "Purulent",
+        "D2 Name": "Purulent",
+        "D2 Field": "LjgDKL4jm5K",
+        "EMPRESS Code": "Purulent",
+        "EMPRESS Field": "District - Aspect de l'échantillon / examen macroscopique (LCR)"
+      },
+      {
+        "D2 UID": "hXnMILVefGz",
+        "D2 Code": "25F/25A/39",
+        "D2 Name": "25F/25A/38",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "25F/25A/38",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "i3NgGyC1mRn",
+        "D2 Code": "35A/35C/43",
+        "D2 Name": "35A/35C/42",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "35A/35C/42",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "I3yaqzIivxe",
+        "D2 Code": "Confirmed",
+        "D2 Name": "Confirmé",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Confirmé",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "IcIkY8BThTa",
+        "D2 Code": "GNB",
+        "D2 Name": "GNB",
+        "D2 Field": "jo9nGjYxvxJ",
+        "EMPRESS Code": "GNB",
+        "EMPRESS Field": "District - Résultat de la coloration de Gram"
+      },
+      {
+        "D2 UID": "IgS4bOX8YwA",
+        "D2 Code": "23F",
+        "D2 Name": "23F",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "23F",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "IOg98EaHwS0",
+        "D2 Code": "Negative",
+        "D2 Name": "Négatif",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Négatif",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "iZeEWefcVSi",
+        "D2 Code": "18C",
+        "D2 Name": "18C",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "18C",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "izJWZELCltJ",
+        "D2 Code": "6B",
+        "D2 Name": "6B",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "6B",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "j9bg51D2b0x",
+        "D2 Code": 20,
+        "D2 Name": 20,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 20,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "JaFOJxgrbNg",
+        "D2 Code": "CHIK",
+        "D2 Name": "CHIK",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "CHIK",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "JArMXhy67fe",
+        "D2 Code": "10A",
+        "D2 Name": "10A",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "10A",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "jchTQrwLcbi",
+        "D2 Code": "Spn",
+        "D2 Name": "Spn",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Spn",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "jhW4XY6kHlc",
+        "D2 Code": "NmX",
+        "D2 Name": "NmX",
+        "D2 Field": "IiInVS6fKH3",
+        "EMPRESS Code": "NmX",
+        "EMPRESS Field": "District - Résultat de l'agglutination du latex"
+      },
+      {
+        "D2 UID": "jj7BGmhbbm3",
+        "D2 Code": "AEROPORT AIGE",
+        "D2 Name": "AEROPORT AIGE",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "AEROPORT AIGE",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "JJUxQVv1TOi",
+        "D2 Code": "Measles",
+        "D2 Name": "Rougeole confirmée",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Rougeole confirmée",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "JpsYC6MIbfJ",
+        "D2 Code": "GingivalFluid",
+        "D2 Name": "Liquide buccal",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Liquide buccal",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "jrf4YxrhpFX",
+        "D2 Code": "Nm",
+        "D2 Name": "Nm Indéterminé",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "Nm Indéterminé",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "jttLVdeAei1",
+        "D2 Code": "Indeterminate",
+        "D2 Name": "Indéterminé",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Indéterminé",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "jV3S52qKCua",
+        "D2 Code": "Environnemental",
+        "D2 Name": "Prélèvement environnemental",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Prélèvement environnemental",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "Jw7yWToZWtB",
+        "D2 Code": "Not done",
+        "D2 Name": "Non fait",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "Non fait",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "JxOOtyc88Pj",
+        "D2 Code": "Nasopharyngé",
+        "D2 Name": "Ecouvillon Nasopharyngé",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Ecouvillon Nasopharyngé",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "k15reUnz82e",
+        "D2 Code": "Other germs",
+        "D2 Name": "Autres germes",
+        "D2 Field": "jo9nGjYxvxJ",
+        "EMPRESS Code": "Autres germes",
+        "EMPRESS Field": "District - Résultat de la coloration de Gram"
+      },
+      {
+        "D2 UID": "kavLg0PRyev",
+        "D2 Code": "Rongeurs",
+        "D2 Name": "Prélèvement sur rongeurs",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Prélèvement sur rongeurs",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "kD2Q1VzHBQZ",
+        "D2 Code": "Compatible",
+        "D2 Name": "Compatible",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Compatible",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "kE5YBjPHRXT",
+        "D2 Code": "Hib",
+        "D2 Name": "Hib",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Hib",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "kf4ivzbSrH9",
+        "D2 Code": "12A",
+        "D2 Name": "12A",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "12A",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "Kkl7Qv0sfyu",
+        "D2 Code": 5,
+        "D2 Name": 5,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 5,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "kppLaZjPG3Z",
+        "D2 Code": 39,
+        "D2 Name": 39,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 39,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "kRyPSNzKk9v",
+        "D2 Code": "Biopsie",
+        "D2 Name": "Biopsie",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Biopsie",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "kwaz8w1DGWo",
+        "D2 Code": "12F/12A/12B/44/47",
+        "D2 Name": "12F/12A/12B/44/46",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "12F/12A/12B/44/46",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "kXm8ZSUdXnK",
+        "D2 Code": "15B",
+        "D2 Name": "15B",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "15B",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "KZItd4ytTRq",
+        "D2 Code": "Clear",
+        "D2 Name": "Clear",
+        "D2 Field": "LjgDKL4jm5K",
+        "EMPRESS Code": "Clear",
+        "EMPRESS Field": "District - Aspect de l'échantillon / examen macroscopique (LCR)"
+      },
+      {
+        "D2 UID": "L1aeNIKu1jb",
+        "D2 Code": "Negative",
+        "D2 Name": "Négatif",
+        "D2 Field": "IiInVS6fKH3",
+        "EMPRESS Code": "Négatif",
+        "EMPRESS Field": "District - Résultat de l'agglutination du latex"
+      },
+      {
+        "D2 UID": "L7gKE8ZvFLM",
+        "D2 Code": "NM",
+        "D2 Name": "Nm",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Nm",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "LiV7rQ7b7Q9",
+        "D2 Code": "Nasopharyngeal",
+        "D2 Name": "Prélèvement nasopharyngé",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Prélèvement nasopharyngé",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "llDkd8h8Ho0",
+        "D2 Code": "Probable",
+        "D2 Name": "Probable",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Probable",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "Lp45KFk3aNU",
+        "D2 Code": "O",
+        "D2 Name": "Autre",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Autre",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "LwHRoY86Er3",
+        "D2 Code": "16F",
+        "D2 Name": "16F",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "16F",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "lxJ6eoNNEs3",
+        "D2 Code": "NmX",
+        "D2 Name": "NmX",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "NmX",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "lxoQG504Aiy",
+        "D2 Code": "Citrin",
+        "D2 Name": "Citrin",
+        "D2 Field": "LjgDKL4jm5K",
+        "EMPRESS Code": "Citrin",
+        "EMPRESS Field": "District - Aspect de l'échantillon / examen macroscopique (LCR)"
+      },
+      {
+        "D2 UID": "m0bFH33uAmV",
+        "D2 Code": "NotDone",
+        "D2 Name": "Non fait",
+        "D2 Field": "jo9nGjYxvxJ",
+        "EMPRESS Code": "Non fait",
+        "EMPRESS Field": "District - Résultat de la coloration de Gram"
+      },
+      {
+        "D2 UID": "maMM4sZZtuW",
+        "D2 Code": "CHP KPALIME",
+        "D2 Name": "CHP KPALIME",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "CHP KPALIME",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "MBHFUOfDkm3",
+        "D2 Code": "CSF",
+        "D2 Name": "LCR",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "LCR",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "Mo0Urr0YbTH",
+        "D2 Code": "Broth",
+        "D2 Name": "Bouillon d'hémoculture",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Bouillon d'hémoculture",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "mUQCRCAMxsK",
+        "D2 Code": "LAmedicalAdvice",
+        "D2 Name": "Left against medical Advice",
+        "D2 Field": "BoIxN7Kfj07",
+        "EMPRESS Code": "Left against medical Advice",
+        "EMPRESS Field": "Devenir du patient"
+      },
+      {
+        "D2 UID": "N02wv5i5DRk",
+        "D2 Code": "No organisms",
+        "D2 Name": "Pas dorganismes",
+        "D2 Field": "jo9nGjYxvxJ",
+        "EMPRESS Code": "Pas dorganismes",
+        "EMPRESS Field": "District - Résultat de la coloration de Gram"
+      },
+      {
+        "D2 UID": "NBdDIRa3Rm5",
+        "D2 Code": 1,
+        "D2 Name": 1,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 1,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "NBtkP5CDiAg",
+        "D2 Code": "35F/47F",
+        "D2 Name": "35F/47F",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "35F/47F",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "NbTynoh1k1q",
+        "D2 Code": "Unknown",
+        "D2 Name": "Inconnu",
+        "D2 Field": "XOcfBHNE685",
+        "EMPRESS Code": "Inconnu",
+        "EMPRESS Field": "Vaccin reçu : Hib"
+      },
+      {
+        "D2 UID": "NEx6diIxOLN",
+        "D2 Code": "CHR SOKODE",
+        "D2 Name": "CHR SOKODE",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "CHR SOKODE",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "nFwZj8UuuK3",
+        "D2 Code": "cVDPV",
+        "D2 Name": "VDPc",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "VDPc",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "Np19wP3KZPh",
+        "D2 Code": "Adequate",
+        "D2 Name": "Adéquat",
+        "D2 Field": "kBBrPq9mMEw",
+        "EMPRESS Code": "Adéquat",
+        "EMPRESS Field": "District - État de l'échantillon"
+      },
+      {
+        "D2 UID": "nQemYPqozXp",
+        "D2 Code": "S",
+        "D2 Name": "Streptocoque B",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "Streptocoque B",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "nSJc7kfKGHd",
+        "D2 Code": "CHP ANEHO",
+        "D2 Name": "CHP ANEHO",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "CHP ANEHO",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "nTb109meYkH",
+        "D2 Code": "22F",
+        "D2 Name": "22F",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "22F",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "oFtauP4Vlqm",
+        "D2 Code": "Rubella",
+        "D2 Name": "Rubéole confirmée",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Rubéole confirmée",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "oM3aV7qiEx9",
+        "D2 Code": "NmA",
+        "D2 Name": "NmA",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "NmA",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "oovoHr8Uddj",
+        "D2 Code": "SP",
+        "D2 Name": "S. pneumoniae",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "S. pneumoniae",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "OR9vhkOxxa5",
+        "D2 Code": "NmX",
+        "D2 Name": "NmX",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "NmX",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "P6MFJpvob5I",
+        "D2 Code": "33F",
+        "D2 Name": "33F",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "33F",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "pcBV0QHuclz",
+        "D2 Code": "Oropharyngé",
+        "D2 Name": "Ecouvillon Oropharyngé",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Ecouvillon Oropharyngé",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "pdGnyo0YID4",
+        "D2 Code": "Nm",
+        "D2 Name": "Nm Indéterminé",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Nm Indéterminé",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "pfWSeWts2Of",
+        "D2 Code": "Yes by verbal history",
+        "D2 Name": "Oui par l'histoire orale",
+        "D2 Field": "XOcfBHNE685",
+        "EMPRESS Code": "Oui par l'histoire orale",
+        "EMPRESS Field": "Vaccin reçu : Hib"
+      },
+      {
+        "D2 UID": "PNJMm8nx84J",
+        "D2 Code": "GPB",
+        "D2 Name": "GPB",
+        "D2 Field": "jo9nGjYxvxJ",
+        "EMPRESS Code": "GPB",
+        "EMPRESS Field": "District - Résultat de la coloration de Gram"
+      },
+      {
+        "D2 UID": "pqxvAQU1z9W",
+        "D2 Code": "Unknown",
+        "D2 Name": "Inconnu",
+        "D2 Field": "iDaqzjHTZRz",
+        "EMPRESS Code": "Inconnu",
+        "EMPRESS Field": "Altération de la conscience"
+      },
+      {
+        "D2 UID": "PuQNjAPpQCC",
+        "D2 Code": "RVF",
+        "D2 Name": "RVF",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "RVF",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "pYp96LzXgx9",
+        "D2 Code": "DNA",
+        "D2 Name": "Extrait d'ADN",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Extrait d'ADN",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "pZlwOSzQdls",
+        "D2 Code": "H",
+        "D2 Name": "H. influenzae (non-b)",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "H. influenzae (non-b)",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "Q1RsckBqzqB",
+        "D2 Code": "PendingPCR",
+        "D2 Name": "Suspect, en attente du résultat de la PCR",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Suspect, en attente du résultat de la PCR",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "QalKJosPlQT",
+        "D2 Code": "Spneumoniae",
+        "D2 Name": "S.pneumoniae",
+        "D2 Field": "IiInVS6fKH3",
+        "EMPRESS Code": "S.pneumoniae",
+        "EMPRESS Field": "District - Résultat de l'agglutination du latex"
+      },
+      {
+        "D2 UID": "qLQw0bELWbU",
+        "D2 Code": "Hib",
+        "D2 Name": "Hib",
+        "D2 Field": "IiInVS6fKH3",
+        "EMPRESS Code": "Hib",
+        "EMPRESS Field": "District - Résultat de l'agglutination du latex"
+      },
+      {
+        "D2 UID": "QUOPvrMopP5",
+        "D2 Code": 2,
+        "D2 Name": 2,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 2,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "qW85uvOWUgU",
+        "D2 Code": "O",
+        "D2 Name": "Autre germe",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "Autre germe",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "qzhSXkZwdo0",
+        "D2 Code": 21,
+        "D2 Name": 21,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 21,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "r1JgMLqmCBj",
+        "D2 Code": "Discrad",
+        "D2 Name": "Cas de rejet",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Cas de rejet",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "r3P1uDZ9Hkp",
+        "D2 Code": "6A",
+        "D2 Name": "6A",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "6A",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "R98tI2c6rF5",
+        "D2 Code": "No",
+        "D2 Name": "Non",
+        "D2 Field": "iDaqzjHTZRz",
+        "EMPRESS Code": "Non",
+        "EMPRESS Field": "Altération de la conscience"
+      },
+      {
+        "D2 UID": "rddD6vyu7rI",
+        "D2 Code": 38,
+        "D2 Name": 38,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 38,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "RHHzz9Vkypg",
+        "D2 Code": "Pending",
+        "D2 Name": "En attente de sortie",
+        "D2 Field": "BoIxN7Kfj07",
+        "EMPRESS Code": "En attente de sortie",
+        "EMPRESS Field": "Devenir du patient"
+      },
+      {
+        "D2 UID": "RJDzONNhEEN",
+        "D2 Code": "PDV",
+        "D2 Name": "Perdu de vue",
+        "D2 Field": "BoIxN7Kfj07",
+        "EMPRESS Code": "Perdu de vue",
+        "EMPRESS Field": "Devenir du patient"
+      },
+      {
+        "D2 UID": "rvuUAhe5qiW",
+        "D2 Code": 31,
+        "D2 Name": 31,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 31,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "rwwWhw34Ijf",
+        "D2 Code": "Cloudy",
+        "D2 Name": "Nuageux",
+        "D2 Field": "LjgDKL4jm5K",
+        "EMPRESS Code": "Nuageux",
+        "EMPRESS Field": "District - Aspect de l'échantillon / examen macroscopique (LCR)"
+      },
+      {
+        "D2 UID": "SFlrbuYPuDZ",
+        "D2 Code": "RR",
+        "D2 Name": "Régional",
+        "D2 Field": "VxdyTZMq4fz",
+        "EMPRESS Code": "Régional",
+        "EMPRESS Field": "Suivi / niveau laboratoire"
+      },
+      {
+        "D2 UID": "sHEAF6xReZr",
+        "D2 Code": "Not adequate",
+        "D2 Name": "Non adéquat",
+        "D2 Field": "kBBrPq9mMEw",
+        "EMPRESS Code": "Non adéquat",
+        "EMPRESS Field": "District - État de l'échantillon"
+      },
+      {
+        "D2 UID": "Sipqj23reqB",
+        "D2 Code": "19F",
+        "D2 Name": "19F",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "19F",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "skPg42TPGZe",
+        "D2 Code": "Positive",
+        "D2 Name": "Positif",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Positif",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "sL67HSORm5M",
+        "D2 Code": "NmW/Y",
+        "D2 Name": "NmW/Y",
+        "D2 Field": "IiInVS6fKH3",
+        "EMPRESS Code": "NmW/Y",
+        "EMPRESS Field": "District - Résultat de l'agglutination du latex"
+      },
+      {
+        "D2 UID": "smEt9Mbm6uL",
+        "D2 Code": "No",
+        "D2 Name": "Non",
+        "D2 Field": "XOcfBHNE685",
+        "EMPRESS Code": "Non",
+        "EMPRESS Field": "Vaccin reçu : Hib"
+      },
+      {
+        "D2 UID": "SmXcR3nlROf",
+        "D2 Code": "23B",
+        "D2 Name": "23B",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "23B",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "T2vMWkNAeDF",
+        "D2 Code": "6C",
+        "D2 Name": "6C",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "6C",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "T5W2GTrSd01",
+        "D2 Code": "NmA",
+        "D2 Name": "NmA",
+        "D2 Field": "IiInVS6fKH3",
+        "EMPRESS Code": "NmA",
+        "EMPRESS Field": "District - Résultat de l'agglutination du latex"
+      },
+      {
+        "D2 UID": "T7WOts04nGt",
+        "D2 Code": "Unknown",
+        "D2 Name": "Inconnu",
+        "D2 Field": "BoIxN7Kfj07",
+        "EMPRESS Code": "Inconnu",
+        "EMPRESS Field": "Devenir du patient"
+      },
+      {
+        "D2 UID": "Td0QNppSMa7",
+        "D2 Code": "CSFISOLATE",
+        "D2 Name": "PPC et isoler",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "PPC et isoler",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "tkKAl5t103Y",
+        "D2 Code": 13,
+        "D2 Name": 13,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 13,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "TqRDF4qfUau",
+        "D2 Code": "33F/33A/38",
+        "D2 Name": "33F/33A/37",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "33F/33A/37",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "TW8rk5gvtaf",
+        "D2 Code": "iVDPV",
+        "D2 Name": "PVDVi",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "PVDVi",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "u237EKffZdR",
+        "D2 Code": "R",
+        "D2 Name": "Résistant",
+        "D2 Field": "jXANIQUFvqc",
+        "EMPRESS Code": "Résistant",
+        "EMPRESS Field": "District - Sensibilité à la ceftriaxone"
+      },
+      {
+        "D2 UID": "u2QMwklZxva",
+        "D2 Code": "Grippe",
+        "D2 Name": "Grippe",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Grippe",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "UatflPTBCdM",
+        "D2 Code": "NmB/E coliK1",
+        "D2 Name": "NmB/E. cliK1",
+        "D2 Field": "IiInVS6fKH3",
+        "EMPRESS Code": "NmB/E. cliK1",
+        "EMPRESS Field": "District - Résultat de l'agglutination du latex"
+      },
+      {
+        "D2 UID": "ufDkCWWmIhH",
+        "D2 Code": "Yes by card or register",
+        "D2 Name": "Oui par carte ou registre",
+        "D2 Field": "XOcfBHNE685",
+        "EMPRESS Code": "Oui par carte ou registre",
+        "EMPRESS Field": "Vaccin reçu : Hib"
+      },
+      {
+        "D2 UID": "ujKx4dXiZOv",
+        "D2 Code": 4,
+        "D2 Name": 4,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 4,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "uMTwS1gWbS8",
+        "D2 Code": 45,
+        "D2 Name": 45,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 45,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "uobHTtAZlr3",
+        "D2 Code": "BIOLIM UL",
+        "D2 Name": "BIOLIM UL",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "BIOLIM UL",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "UrQkxMyOUqd",
+        "D2 Code": "Regional",
+        "D2 Name": "International",
+        "D2 Field": "VxdyTZMq4fz",
+        "EMPRESS Code": "International",
+        "EMPRESS Field": "Suivi / niveau laboratoire"
+      },
+      {
+        "D2 UID": "UVMUAEljlxv",
+        "D2 Code": "NmC",
+        "D2 Name": "NmC",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "NmC",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "uxcbcORxU1c",
+        "D2 Code": "Discarded",
+        "D2 Name": "Décarté(e)s",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Décarté(e)s",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "vaSPzNE0TMs",
+        "D2 Code": "Streptococcus B",
+        "D2 Name": "Streptocoque B",
+        "D2 Field": "IiInVS6fKH3",
+        "EMPRESS Code": "Streptocoque B",
+        "EMPRESS Field": "District - Résultat de l'agglutination du latex"
+      },
+      {
+        "D2 UID": "vBLCsvbOjSM",
+        "D2 Code": "Unknown",
+        "D2 Name": "Inconnu",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Inconnu",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "vCaXGPUEumD",
+        "D2 Code": "ThroatSwab",
+        "D2 Name": "Prélèvement de gorge",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Prélèvement de gorge",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "vfEEsIFaFbY",
+        "D2 Code": "23A",
+        "D2 Name": "23A",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "23A",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "VgKAMfYDNyu",
+        "D2 Code": "Whole",
+        "D2 Name": "Sang",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Sang",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "vlmmcdlodN3",
+        "D2 Code": 46,
+        "D2 Name": 46,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 46,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "Vnj0YHETsip",
+        "D2 Code": "Other",
+        "D2 Name": "Autre, précisez",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "Autre, précisez",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "VVrnJ7cLA3N",
+        "D2 Code": "9N/9L",
+        "D2 Name": "9N/9L",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "9N/9L",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "w21vPo5oOKf",
+        "D2 Code": "NmC",
+        "D2 Name": "NmC",
+        "D2 Field": "IiInVS6fKH3",
+        "EMPRESS Code": "NmC",
+        "EMPRESS Field": "District - Résultat de l'agglutination du latex"
+      },
+      {
+        "D2 UID": "W2a2kzKV1bJ",
+        "D2 Code": "Dried",
+        "D2 Name": "Taches de sang séché",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Taches de sang séché",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "WAKvomshcgJ",
+        "D2 Code": "11A",
+        "D2 Name": "11A",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "11A",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "wG3CDdTWK5x",
+        "D2 Code": "Xanthochromic",
+        "D2 Name": "Xanthochromique",
+        "D2 Field": "LjgDKL4jm5K",
+        "EMPRESS Code": "Xanthochromique",
+        "EMPRESS Field": "District - Aspect de l'échantillon / examen macroscopique (LCR)"
+      },
+      {
+        "D2 UID": "wkasZX0A8wB",
+        "D2 Code": "22F/22A",
+        "D2 Name": "22F/22A",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "22F/22A",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "wNtD0f4B7c5",
+        "D2 Code": "Dengue",
+        "D2 Name": "Dengue",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Dengue",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "wp3iVgC65cw",
+        "D2 Code": "INH KARA",
+        "D2 Name": "INH KARA",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "INH KARA",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "WrxmD7qAdOV",
+        "D2 Code": "Blood",
+        "D2 Name": "Sang",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Sang",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "x9yVKkv9koc",
+        "D2 Code": "Yes",
+        "D2 Name": "Oui",
+        "D2 Field": "iDaqzjHTZRz",
+        "EMPRESS Code": "Oui",
+        "EMPRESS Field": "Altération de la conscience"
+      },
+      {
+        "D2 UID": "XCt6ZG3UjQ5",
+        "D2 Code": "SP",
+        "D2 Name": "S. pneumoniae",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "S. pneumoniae",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "xHBJ92djEAb",
+        "D2 Code": "10F/10C/33C",
+        "D2 Name": "10F/10C/33C",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "10F/10C/33C",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "Xn061x1GQdY",
+        "D2 Code": "INH LOME",
+        "D2 Name": "INH LOME",
+        "D2 Field": "hN5qrbGeYnF",
+        "EMPRESS Code": "INH LOME",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "D2 UID": "xOBo1xBuPqe",
+        "D2 Code": "Stool",
+        "D2 Name": "Selle",
+        "D2 Field": "fkqcoDLvzED",
+        "EMPRESS Code": "Selle",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 UID": "XPMJsFrSTEd",
+        "D2 Code": "District",
+        "D2 Name": "District",
+        "D2 Field": "VxdyTZMq4fz",
+        "EMPRESS Code": "District",
+        "EMPRESS Field": "Suivi / niveau laboratoire"
+      },
+      {
+        "D2 UID": "xqBOuzUdmB5",
+        "D2 Code": "Died",
+        "D2 Name": "Décès",
+        "D2 Field": "BoIxN7Kfj07",
+        "EMPRESS Code": "Décès",
+        "EMPRESS Field": "Devenir du patient"
+      },
+      {
+        "D2 UID": "XQKGtlhqn6D",
+        "D2 Code": "S",
+        "D2 Name": "Streptocoque B",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Streptocoque B",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "Xv0Mlo3ZhTC",
+        "D2 Code": "N",
+        "D2 Name": "Non effectué",
+        "D2 Field": "jXANIQUFvqc",
+        "EMPRESS Code": "Non effectué",
+        "EMPRESS Field": "District - Sensibilité à la ceftriaxone"
+      },
+      {
+        "D2 UID": "xYHF3twEk8M",
+        "D2 Code": "7F",
+        "D2 Name": "7F",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "7F",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "Yf8UHYpuhJP",
+        "D2 Code": "18A/18B/18C/18F",
+        "D2 Name": "18A/18B/18C/18F",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "18A/18B/18C/18F",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "YJlGMAfMMEW",
+        "D2 Code": "Transferred",
+        "D2 Name": "Transféré",
+        "D2 Field": "BoIxN7Kfj07",
+        "EMPRESS Code": "Transféré",
+        "EMPRESS Field": "Devenir du patient"
+      },
+      {
+        "D2 UID": "yVsnOTFffwH",
+        "D2 Code": "NmY",
+        "D2 Name": "NmY",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "NmY",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "Yvzv5xrucPH",
+        "D2 Code": "Investigation",
+        "D2 Name": "Investigation incomplète",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "Investigation incomplète",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "yXpkdd4uD7W",
+        "D2 Code": "I",
+        "D2 Name": "Intermédiaire",
+        "D2 Field": "jXANIQUFvqc",
+        "EMPRESS Code": "Intermédiaire",
+        "EMPRESS Field": "District - Sensibilité à la ceftriaxone"
+      },
+      {
+        "D2 UID": "zc8dQ52ykoL",
+        "D2 Code": "NmW",
+        "D2 Name": "NmW",
+        "D2 Field": "VXC7HA1ypLa",
+        "EMPRESS Code": "NmW",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "D2 UID": "zeZTB3NQNHF",
+        "D2 Code": 14,
+        "D2 Name": 14,
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": 14,
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "Zmtp5HCyA40",
+        "D2 Code": "9A",
+        "D2 Name": "9A",
+        "D2 Field": "HoNyj7eawmh",
+        "EMPRESS Code": "9A",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "D2 UID": "ZTgQsj5KmBw",
+        "D2 Code": "CCHF",
+        "D2 Name": "FHCC",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "FHCC",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "D2 UID": "zTzH9ZhktAj",
+        "D2 Code": "NmC",
+        "D2 Name": "NmC",
+        "D2 Field": "bX9jmncMHLC",
+        "EMPRESS Code": "NmC",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      }
+    ],
+    "program": {
+      "id": "YcxRnVWkbQ1",
+      "name": "Surveillance basée sur les cas",
+      "programType": "WITH_REGISTRATION"
+    },
+    "mappings": [
+      {
+        "D2 Field": "enrolledAt",
+        "EMPRESS Field": "Date of notification"
+      },
+      {
+        "D2 Field": "enrollmentOrgUnitName",
+        "EMPRESS Field": "Organisation unit name"
+      },
+      {
+        "D2 Field": "x0n3BxFa6SC",
+        "EMPRESS Field": "Diagnostic Initial"
+      },
+      {
+        "D2 Field": "a1asiVlyTbc",
+        "EMPRESS Field": "Numero Epid"
+      },
+      {
+        "D2 Field": "ENRjVGxVL6l",
+        "EMPRESS Field": "Nom"
+      },
+      {
+        "D2 Field": "sB1IHYu2xQT",
+        "EMPRESS Field": "Prénom"
+      },
+      {
+        "D2 Field": "NI0QRzJvQ0k",
+        "EMPRESS Field": "Date de naissance"
+      },
+      {
+        "D2 Field": "oindugucx72",
+        "EMPRESS Field": "Sexe à la naissance"
+      },
+      {
+        "D2 Field": "Xhdn49gUd52",
+        "EMPRESS Field": "Adresse du domicile"
+      },
+      {
+        "D2 Field": "fctSQp5nAYl",
+        "EMPRESS Field": "Numéro de téléphone du cas"
+      },
+      {
+        "D2 Field": "DllEa3TJHNo",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Date d'apparition des symptômes"
+      },
+      {
+        "D2 Field": "Aif45J6yuAp",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Date vue dans un centre santé"
+      },
+      {
+        "D2 Field": "pXGhYbf5cAP",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Patients hospitalisés/non hospitalisés"
+      },
+      {
+        "D2 Field": "LNRDN39NSfY",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Echantillon prélevé (O/N)"
+      },
+      {
+        "D2 Field": "NMLXJ99HNOw",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Vaccin reçu : MenAfriVac"
+      },
+      {
+        "D2 Field": "HhKjMQgPwuQ",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Date de la vaccination : MenAfriVac"
+      },
+      {
+        "D2 Field": "iZvjnxwGA6Z",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Vaccin reçu : Vaccin méningococcique polyvalent"
+      },
+      {
+        "D2 Field": "uvyJmb0y5TM",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Date de la vaccination : Vaccin méningococcique polyvalent"
+      },
+      {
+        "D2 Field": "XOcfBHNE685",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Vaccin reçu : Hib"
+      },
+      {
+        "D2 Field": "poOs5h8X9CD",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "N doses reçues : Hib"
+      },
+      {
+        "D2 Field": "ixy37MXw6pL",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Date de la vaccination : Hib"
+      },
+      {
+        "D2 Field": "S5h2ZUkqLD7",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Vaccin reçu : PCV"
+      },
+      {
+        "D2 Field": "l7EjsU6Wu2k",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "N doses reçues : PCV"
+      },
+      {
+        "D2 Field": "RQyRmg1Ry0u",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Date de la vaccination : PCV"
+      },
+      {
+        "D2 Field": "iDaqzjHTZRz",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Altération de la conscience"
+      },
+      {
+        "D2 Field": "Ka2QSdJualP",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Raideur du cou"
+      },
+      {
+        "D2 Field": "XlJGFCsUzKt",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Fontanelle bombée"
+      },
+      {
+        "D2 Field": "S45CqdVcFXC",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Fièvre"
+      },
+      {
+        "D2 Field": "wGxeDr2tfgp",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Maux de tête"
+      },
+      {
+        "D2 Field": "OJ0oQWQp0u6",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Nausées"
+      },
+      {
+        "D2 Field": "U6SJ5TnPU84",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Photophobie"
+      },
+      {
+        "D2 Field": "BEILQ6B1ilK",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "SCB - Crises/convulsions"
+      },
+      {
+        "D2 Field": "heLc9SVsvjT",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Autres signes/symptômes, précisez"
+      },
+      {
+        "D2 Field": "yJBRhOz5h8c",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Date à laquelle le cas a été notifié au district"
+      },
+      {
+        "D2 Field": "kiCiB1aRwBe",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Nom du notificateur"
+      },
+      {
+        "D2 Field": "KoYXKIRt0sH",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Téléphone du notificateur"
+      },
+      {
+        "D2 Field": "rLl9AAjOwyf",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Personne qui a terminé l'investigation : Nom"
+      },
+      {
+        "D2 Field": "Gun6zfKdFmp",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Personne qui a terminé l'investigation : Contact"
+      },
+      {
+        "D2 Field": "ClQKlLa5fL1",
+        "D2 STAGE": "G0ePNuYPT87",
+        "EMPRESS Field": "ID de l'échantillon"
+      },
+      {
+        "D2 Field": "fkqcoDLvzED",
+        "D2 STAGE": "G0ePNuYPT87",
+        "EMPRESS Field": "Type d'échantillon"
+      },
+      {
+        "D2 Field": "P36lcIeZyhF",
+        "D2 STAGE": "G0ePNuYPT87",
+        "EMPRESS Field": "Date de prélèvement de l'échantillon"
+      },
+      {
+        "D2 Field": "RfciWN4qeZk",
+        "D2 STAGE": "G0ePNuYPT87",
+        "EMPRESS Field": "Date d'envoi/expedition de l'échantillon au laboratoire"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.o59BSUIg0Q5",
+        "D2 Field": "o59BSUIg0Q5",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Date de réception de l'échantillon"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.fhS3GrGepCn",
+        "D2 Field": "fhS3GrGepCn",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Identification du laboratoire"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.hN5qrbGeYnF",
+        "D2 Field": "hN5qrbGeYnF",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Nom du laboratoire"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.kBBrPq9mMEw",
+        "D2 Field": "kBBrPq9mMEw",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - État de l'échantillon"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.LjgDKL4jm5K",
+        "D2 Field": "LjgDKL4jm5K",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Aspect de l'échantillon / examen macroscopique (LCR)"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.jo9nGjYxvxJ",
+        "D2 Field": "jo9nGjYxvxJ",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Résultat de la coloration de Gram"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.IiInVS6fKH3",
+        "D2 Field": "IiInVS6fKH3",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Résultat de l'agglutination du latex"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.jG9A796Xvo8",
+        "D2 Field": "jG9A796Xvo8",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - test TDR utilisé (préciser)"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.jC5HBD3N2h5",
+        "D2 Field": "jC5HBD3N2h5",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Résultat du TDR"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.dYZ8yAOfGfN",
+        "D2 Field": "dYZ8yAOfGfN",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Résultat de la culture "
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.sqSuC1ehij1",
+        "D2 Field": "sqSuC1ehij1",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Numération des globules blancs"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.vbRIm76FqPH",
+        "D2 Field": "vbRIm76FqPH",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Date du PCR"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.VXC7HA1ypLa",
+        "D2 Field": "VXC7HA1ypLa",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Résultat du PCR"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.juvZrUT1h3P",
+        "D2 Field": "juvZrUT1h3P",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Etat frais"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.fw1kz1gpanC",
+        "D2 Field": "fw1kz1gpanC",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - LYMPH(%)"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.WFrppPdafQl",
+        "D2 Field": "WFrppPdafQl",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - PN(%)"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.JrIMAA2Ubbl",
+        "D2 Field": "JrIMAA2Ubbl",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Sensibilité à la pénicilline"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.jXANIQUFvqc",
+        "D2 Field": "jXANIQUFvqc",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Sensibilité à la ceftriaxone"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.CAHdBvzG00V",
+        "D2 Field": "CAHdBvzG00V",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Sensibilité à la ciprofloxacine"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.E4SfiWAIaTR",
+        "D2 Field": "E4SfiWAIaTR",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Sensibilité à l'oxacilline"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.aWLt5NgPpr1",
+        "D2 Field": "aWLt5NgPpr1",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Autres antibiotiques testés"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.TTZyNR1cSkI",
+        "D2 Field": "TTZyNR1cSkI",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - résultat de l'analyse d'autres antibiotiques"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.j8xNVOBsWMr",
+        "D2 Field": "j8xNVOBsWMr",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Autres résultats de tests"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.bX9jmncMHLC",
+        "D2 Field": "bX9jmncMHLC",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Résultat final du laboratoire"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.HoNyj7eawmh",
+        "D2 Field": "HoNyj7eawmh",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - sérotype S. pneumoniae"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.sBqrtlW8hGb",
+        "D2 Field": "sBqrtlW8hGb",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Date d'envoi des résultats finaux du laboratoire au ministère de la santé"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|District|F9CrPrvrtb1.UZJj6L9XCd8",
+        "D2 Field": "UZJj6L9XCd8",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "District - Date d'envoi des résultats finaux du laboratoire au district"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.o59BSUIg0Q5",
+        "D2 Field": "o59BSUIg0Q5",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Date de réception de l'échantillon"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.fhS3GrGepCn",
+        "D2 Field": "fhS3GrGepCn",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Identification du laboratoire"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.hN5qrbGeYnF",
+        "D2 Field": "hN5qrbGeYnF",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Nom du laboratoire"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.kBBrPq9mMEw",
+        "D2 Field": "kBBrPq9mMEw",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - État de l'échantillon"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.LjgDKL4jm5K",
+        "D2 Field": "LjgDKL4jm5K",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Aspect de l'échantillon / examen macroscopique (LCR)"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.jo9nGjYxvxJ",
+        "D2 Field": "jo9nGjYxvxJ",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Résultat de la coloration de Gram"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.IiInVS6fKH3",
+        "D2 Field": "IiInVS6fKH3",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Résultat de l'agglutination du latex"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.jG9A796Xvo8",
+        "D2 Field": "jG9A796Xvo8",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - test TDR utilisé (préciser)"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.jC5HBD3N2h5",
+        "D2 Field": "jC5HBD3N2h5",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Résultat du TDR"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.dYZ8yAOfGfN",
+        "D2 Field": "dYZ8yAOfGfN",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Résultat de la culture "
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.sqSuC1ehij1",
+        "D2 Field": "sqSuC1ehij1",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Numération des globules blancs"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.vbRIm76FqPH",
+        "D2 Field": "vbRIm76FqPH",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Date du PCR"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.VXC7HA1ypLa",
+        "D2 Field": "VXC7HA1ypLa",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Résultat du PCR"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.juvZrUT1h3P",
+        "D2 Field": "juvZrUT1h3P",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Etat frais"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.fw1kz1gpanC",
+        "D2 Field": "fw1kz1gpanC",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - LYMPH(%)"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.WFrppPdafQl",
+        "D2 Field": "WFrppPdafQl",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - PN(%)"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.JrIMAA2Ubbl",
+        "D2 Field": "JrIMAA2Ubbl",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Sensibilité à la pénicilline"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.jXANIQUFvqc",
+        "D2 Field": "jXANIQUFvqc",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Sensibilité à la ceftriaxone"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.CAHdBvzG00V",
+        "D2 Field": "CAHdBvzG00V",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Sensibilité à la ciprofloxacine"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.E4SfiWAIaTR",
+        "D2 Field": "E4SfiWAIaTR",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Sensibilité à l'oxacilline"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.aWLt5NgPpr1",
+        "D2 Field": "aWLt5NgPpr1",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Autres antibiotiques testés"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.TTZyNR1cSkI",
+        "D2 Field": "TTZyNR1cSkI",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - résultat de l'analyse d'autres antibiotiques"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.j8xNVOBsWMr",
+        "D2 Field": "j8xNVOBsWMr",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Autres résultats de tests"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.bX9jmncMHLC",
+        "D2 Field": "bX9jmncMHLC",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Résultat final du laboratoire"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.HoNyj7eawmh",
+        "D2 Field": "HoNyj7eawmh",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - sérotype S. pneumoniae"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.sBqrtlW8hGb",
+        "D2 Field": "sBqrtlW8hGb",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Date d'envoi des résultats finaux du laboratoire au ministère de la santé"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|Regional|F9CrPrvrtb1.UZJj6L9XCd8",
+        "D2 Field": "UZJj6L9XCd8",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "Regional - Date d'envoi des résultats finaux du laboratoire au district"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.o59BSUIg0Q5",
+        "D2 Field": "o59BSUIg0Q5",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Date de réception de l'échantillon"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.fhS3GrGepCn",
+        "D2 Field": "fhS3GrGepCn",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Identification du laboratoire"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.hN5qrbGeYnF",
+        "D2 Field": "hN5qrbGeYnF",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Nom du laboratoire"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.kBBrPq9mMEw",
+        "D2 Field": "kBBrPq9mMEw",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - État de l'échantillon"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.LjgDKL4jm5K",
+        "D2 Field": "LjgDKL4jm5K",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Aspect de l'échantillon / examen macroscopique (LCR)"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.jo9nGjYxvxJ",
+        "D2 Field": "jo9nGjYxvxJ",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Résultat de la coloration de Gram"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.IiInVS6fKH3",
+        "D2 Field": "IiInVS6fKH3",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Résultat de l'agglutination du latex"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.jG9A796Xvo8",
+        "D2 Field": "jG9A796Xvo8",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - test TDR utilisé (préciser)"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.jC5HBD3N2h5",
+        "D2 Field": "jC5HBD3N2h5",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Résultat du TDR"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.dYZ8yAOfGfN",
+        "D2 Field": "dYZ8yAOfGfN",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Résultat de la culture "
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.sqSuC1ehij1",
+        "D2 Field": "sqSuC1ehij1",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Numération des globules blancs"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.vbRIm76FqPH",
+        "D2 Field": "vbRIm76FqPH",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Date du PCR"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.VXC7HA1ypLa",
+        "D2 Field": "VXC7HA1ypLa",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Résultat du PCR"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.juvZrUT1h3P",
+        "D2 Field": "juvZrUT1h3P",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Etat frais"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.fw1kz1gpanC",
+        "D2 Field": "fw1kz1gpanC",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - LYMPH(%)"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.WFrppPdafQl",
+        "D2 Field": "WFrppPdafQl",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - PN(%)"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.JrIMAA2Ubbl",
+        "D2 Field": "JrIMAA2Ubbl",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Sensibilité à la pénicilline"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.jXANIQUFvqc",
+        "D2 Field": "jXANIQUFvqc",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Sensibilité à la ceftriaxone"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.CAHdBvzG00V",
+        "D2 Field": "CAHdBvzG00V",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Sensibilité à la ciprofloxacine"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.E4SfiWAIaTR",
+        "D2 Field": "E4SfiWAIaTR",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Sensibilité à l'oxacilline"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.aWLt5NgPpr1",
+        "D2 Field": "aWLt5NgPpr1",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Autres antibiotiques testés"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.TTZyNR1cSkI",
+        "D2 Field": "TTZyNR1cSkI",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - résultat de l'analyse d'autres antibiotiques"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.j8xNVOBsWMr",
+        "D2 Field": "j8xNVOBsWMr",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Autres résultats de tests"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.bX9jmncMHLC",
+        "D2 Field": "bX9jmncMHLC",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Résultat final du laboratoire"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.HoNyj7eawmh",
+        "D2 Field": "HoNyj7eawmh",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - sérotype S. pneumoniae"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.sBqrtlW8hGb",
+        "D2 Field": "sBqrtlW8hGb",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Date d'envoi des résultats finaux du laboratoire au ministère de la santé"
+      },
+      {
+        "Formula": "IF|F9CrPrvrtb1.VxdyTZMq4fz|National|F9CrPrvrtb1.UZJj6L9XCd8",
+        "D2 Field": "UZJj6L9XCd8",
+        "D2 STAGE": "F9CrPrvrtb1",
+        "EMPRESS Field": "National - Date d'envoi des résultats finaux du laboratoire au district"
+      },
+      {
+        "D2 Field": "BLiSlEmoEQH",
+        "D2 STAGE": "r9R6DTQdVgR",
+        "EMPRESS Field": "Classification finale"
+      },
+      {
+        "D2 Field": "BoIxN7Kfj07",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Devenir du patient"
+      },
+      {
+        "D2 Field": "F5Hk14hp8mT",
+        "D2 STAGE": "GIb6Ge9PCc4",
+        "EMPRESS Field": "Devenir - Date"
+      }
+    ],
+    "createdAt": "2025-01-10T09:49:40.281Z",
+    "urlFilter": {
+      "Formula": "x0n3BxFa6SC:eq:Meningitis",
+      "EMPRESS Field": "urlFilter"
+    }
+  }
+]

@@ -12,6 +12,7 @@ import Method from './utils/app.methods'
 import {
   API_FIELDS_KEYS,
   DEFAULT_API_FIELDS,
+  isOutdatedTrackedEntitiesFields,
 } from './utils/apiFields.defaults'
 
 import 'react-date-range/dist/styles.css'
@@ -30,6 +31,11 @@ const App = () => {
     API_FIELDS_KEYS.TRACKED_ENTITIES,
     Method.POST
   )
+  const { mutate: trackedEntitiesFieldsUpdate } = useApiFieldsMutation(
+    config.appName,
+    API_FIELDS_KEYS.TRACKED_ENTITIES,
+    Method.PUT
+  )
   const { mutate: eventsFieldsMutate } = useApiFieldsMutation(
     config.appName,
     API_FIELDS_KEYS.EVENTS,
@@ -39,6 +45,7 @@ const App = () => {
   const {
     trackedEntitiesError,
     eventsError,
+    trackedEntitiesFields,
     refetch: refetchApiFields,
   } = useLoadApiFields(config.appName)
 
@@ -51,6 +58,10 @@ const App = () => {
       await trackedEntitiesFieldsMutate({
         content: DEFAULT_API_FIELDS[API_FIELDS_KEYS.TRACKED_ENTITIES],
       })
+    } else if (isOutdatedTrackedEntitiesFields(trackedEntitiesFields)) {
+      await trackedEntitiesFieldsUpdate({
+        content: DEFAULT_API_FIELDS[API_FIELDS_KEYS.TRACKED_ENTITIES],
+      })
     }
 
     if (eventsError) {
@@ -59,7 +70,7 @@ const App = () => {
       })
     }
 
-    if (trackedEntitiesError || eventsError) {
+    if (trackedEntitiesError || eventsError || isOutdatedTrackedEntitiesFields(trackedEntitiesFields)) {
       await refetchApiFields()
     }
 
@@ -73,10 +84,26 @@ const App = () => {
   }, [mappingsError, trackedEntitiesError, eventsError])
 
   useOnceEffect(() => {
-    if (mappingsData && !trackedEntitiesError && !eventsError) {
+    if (
+      mappingsData &&
+      !trackedEntitiesError &&
+      !eventsError &&
+      !isOutdatedTrackedEntitiesFields(trackedEntitiesFields)
+    ) {
       setDatastoreInitialised(true)
     }
-  }, [mappingsData, trackedEntitiesError, eventsError])
+  }, [mappingsData, trackedEntitiesError, eventsError, trackedEntitiesFields])
+
+  useOnceEffect(() => {
+    if (
+      mappingsData &&
+      !trackedEntitiesError &&
+      !eventsError &&
+      isOutdatedTrackedEntitiesFields(trackedEntitiesFields)
+    ) {
+      initDataStore()
+    }
+  }, [mappingsData, trackedEntitiesError, eventsError, trackedEntitiesFields])
 
 
   return (
