@@ -36,19 +36,17 @@ export const isEventInDateRange = (occurredAt, startDate, endDate) => {
 }
 
 export const parseTrackedEntitiesInstances = (response) => {
-  if (Array.isArray(response?.instances)) {
+  if (response && response?.instances && Array.isArray(response?.instances)) {
     return response.instances
-  }
-
-  if (Array.isArray(response?.trackedEntities?.instances)) {
+  } else if (response && response?.trackedEntities && response?.trackedEntities?.instances && Array.isArray(response?.trackedEntities?.instances)) {
     return response.trackedEntities.instances
-  }
-
-  if (Array.isArray(response?.trackedEntities)) {
+  } else if (response && response?.trackedEntities && Array.isArray(response?.trackedEntities)) {
     return response.trackedEntities
+  } else if (response && response?.trackedEntities?.trackedEntities && Array.isArray(response?.trackedEntities?.trackedEntities)) {
+    return response.trackedEntities.trackedEntities
+  } else {
+    return []
   }
-
-  return []
 }
 
 export const getProgramEvents = (enrollments, programID) => {
@@ -215,7 +213,7 @@ export const diagnoseExportEmpty = ({
       selectedTypeOU !== 'DESCENDANTS' ||
       !selectedOrganisationUnitLevel ||
       organisationUnits.find((ou) => ou.id === trackedEntity.orgUnit)?.level ===
-        selectedOrganisationUnitLevel?.level
+      selectedOrganisationUnitLevel?.level
 
     if (!matchesOrgUnitLevel) {
       continue
@@ -360,9 +358,9 @@ const resolveFieldValue = ({
       const enrolledAt = enrollment?.enrolledAt || ''
       return field?.formula?.startsWith('FORMAT')
         ? dateFormatter(
-            enrolledAt,
-            field.formula.split('|')[1]?.toUpperCase() || 'DD/MM/YYYY'
-          )
+          enrolledAt,
+          field.formula.split('|')[1]?.toUpperCase() || 'DD/MM/YYYY'
+        )
         : dateFormatter(enrolledAt, 'DD/MM/YYYY')
     }
 
@@ -465,14 +463,14 @@ const resolveFieldValue = ({
   if (field?.type === 'ATTRIBUTE') {
     const attributeValue = field.field
       ? curr.attributes?.find((a) => a.attribute === field.id)?.[field.field] ||
-        ''
+      ''
       : curr.attributes?.find((a) => a.attribute === field.id)?.value || ''
 
     return field?.formula?.startsWith('FORMAT')
       ? dateFormatter(
-          attributeValue,
-          field.formula.split('|')[1]?.toUpperCase() || 'DD/MM/YYYY'
-        )
+        attributeValue,
+        field.formula.split('|')[1]?.toUpperCase() || 'DD/MM/YYYY'
+      )
       : getOptionValue(attributeValue, mappingOptions)
   }
 
@@ -486,9 +484,9 @@ const resolveFieldValue = ({
 
     return field?.formula?.startsWith('FORMAT')
       ? dateFormatter(
-          eventValue,
-          field.formula.split('|')[1]?.toUpperCase() || 'DD/MM/YYYY'
-        )
+        eventValue,
+        field.formula.split('|')[1]?.toUpperCase() || 'DD/MM/YYYY'
+      )
       : getOptionValue(eventValue, mappingOptions)
   }
 
@@ -516,16 +514,16 @@ export const transformTrackedEntitiesToExport = ({
     .filter((trackedEntity) =>
       selectedAttribute && selectedAttributeValue
         ? trackedEntity.attributes?.some(
-            (attribute) =>
-              attribute.attribute === selectedAttribute.id &&
-              attribute.value === selectedAttributeValue
-          )
+          (attribute) =>
+            attribute.attribute === selectedAttribute.id &&
+            attribute.value === selectedAttributeValue
+        )
         : true
     )
     .filter((trackedEntity) =>
       selectedTypeOU === 'DESCENDANTS' && selectedOrganisationUnitLevel
         ? organisationUnits.find((ou) => ou.id === trackedEntity.orgUnit)
-            ?.level === selectedOrganisationUnitLevel?.level
+          ?.level === selectedOrganisationUnitLevel?.level
         : true
     )
     .reduce((prev, curr) => {

@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { Dropdown, Space } from "antd";
-import {
-  subMonths,
-} from "date-fns";
+import { subMonths } from "date-fns";
 import csvDownload from "json-to-csv-export";
 import { DateRangePicker } from "react-date-range";
 
@@ -92,7 +90,7 @@ const DataExport = () => {
   useEffect(() => {
     if (selectedMapping) {
       const programId = data?.mappings.find(
-        (mapping) => mapping.id === selectedMapping
+        (mapping) => mapping.id === selectedMapping,
       )?.program?.id;
       if (programId) {
         getProgramAttributes(programId);
@@ -106,7 +104,7 @@ const DataExport = () => {
 
       const dateObject = dateRange[0];
       const mapping = data.mappings.find(
-        (mapping) => mapping.id === selectedMapping
+        (mapping) => mapping.id === selectedMapping,
       );
 
       const startDate = dateFormatter(dateObject.startDate, "YYYY-MM-DD");
@@ -171,6 +169,7 @@ const DataExport = () => {
       };
     } catch (err) {
       setLoadingExport(false);
+
       return show({ message: err.message, type: { default: true } });
     }
   };
@@ -260,11 +259,11 @@ const DataExport = () => {
 
   const handleSelectAttribute = ({ selected }) =>
     setSelectedAttribute(
-      programAttributes.find((attr) => attr.id === selected)
+      programAttributes.find((attr) => attr.id === selected),
     );
 
   return (
-    <div  className="m-1 w-[30%]">
+    <div className="m-1 w-[30%]">
       <div>
         <div className="p-1 border-2">
           <div className="flex justify-between">
@@ -272,7 +271,7 @@ const DataExport = () => {
             {selectedMapping && (
               <div className="border-2 p-1 rounded bg-slate-500 text-white">
                 {data?.mappings.find(
-                  (mapping) => mapping.id === selectedMapping
+                  (mapping) => mapping.id === selectedMapping,
                 )?.program?.name || "No Mapping Selected yet"}
               </div>
             )}
@@ -295,7 +294,8 @@ const DataExport = () => {
 
           {data && data?.mappings && data?.mappings.length === 0 && (
             <div className="text-sm italic text-red-900 text-left my-2">
-              No mapping available yet! Please import a new mapping file in the settings menu first
+              No mapping available yet! Please import a new mapping file in the
+              settings menu first
             </div>
           )}
         </div>
@@ -383,7 +383,7 @@ const DataExport = () => {
                 ?.filter((level) =>
                   selectedTypeOU === "DESCENDANTS"
                     ? level.level >= selectedOrgUnit?.level
-                    : true
+                    : true,
                 )
                 ?.map((level) => (
                   <SingleSelectOption label={level.name} value={level.id} />
@@ -438,7 +438,7 @@ const DataExport = () => {
           <Space direction="vertical">
             <Space wrap>
               <Dropdown
-              disabled={!selectedOrgUnit || !selectedMapping}
+                disabled={!selectedOrgUnit || !selectedMapping}
                 menu={{
                   items: [
                     {
