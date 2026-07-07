@@ -206,7 +206,7 @@ const DataExport = () => {
 
   const handleExportFile = (text1, text2, data) => {
     try {
-      if (data?.length === 0) return console.log("Data is empty");
+      if (data?.length === 0) throw new Error("Data is empty");
 
       const workbook = new window.ExcelJS.Workbook();
       const dataSheet = workbook.addWorksheet("Empres-i Data");
@@ -242,7 +242,7 @@ const DataExport = () => {
         window.saveAs(blob, "data.xlsx");
       });
     } catch (err) {
-      console.log(err);
+      throw new Error(err);
     }
   };
 
