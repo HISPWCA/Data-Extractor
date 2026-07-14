@@ -5,6 +5,7 @@ const TRACKED_ENTITIES_QUERY = {
   trackedEntities: {
     resource: 'tracker/trackedEntities',
     params: ({
+      urlFilter,
       program,
       orgUnit,
       startDate,
@@ -19,6 +20,7 @@ const TRACKED_ENTITIES_QUERY = {
       eventOccuredBefore: endDate,
       skipPaging: true,
       ouMode: ouMode ? ouMode : 'SELECTED',
+      filter: urlFilter,
     }),
   },
 }

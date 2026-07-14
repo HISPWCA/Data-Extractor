@@ -107,11 +107,19 @@ const DataExport = () => {
         (mapping) => mapping.id === selectedMapping,
       );
 
+      let urlFilter = null
+      const urlFilteredObject = mapping.mappings.find(e => e["EMPRESS Field"] === "urlFilter")
+      if(urlFilteredObject){
+        // urlFilter = `&filter=${urlFilteredObject["Formula"]}`
+        urlFilter = urlFilteredObject["Formula"]
+      }
+
       const startDate = dateFormatter(dateObject.startDate, "YYYY-MM-DD");
       const endDate = dateFormatter(dateObject.endDate, "YYYY-MM-DD");
       const programID = mapping.program.id;
 
       const response = await refetch({
+        urlFilter,
         program: programID,
         orgUnit: selectedOrgUnit.id,
         startDate,
