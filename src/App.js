@@ -9,7 +9,6 @@ import { useOnceEffect } from '@reactuses/core'
 import useMappingsMutation from './hooks/useMappingsMutation'
 import useApiFieldsMutation from './hooks/useApiFieldsMutation'
 import Method from './utils/app.methods'
-import { ThemeProvider } from './utils/ThemeContext'
 import { SidebarProvider } from './utils/SidebarContext'
 import {
   API_FIELDS_KEYS,
@@ -113,8 +112,7 @@ const App = () => {
       {!dataStoreInitialised && <></>}
 
       {dataStoreInitialised && (
-        <ThemeProvider>
-          <SidebarProvider>
+        <SidebarProvider>
             <HashRouter>
               <div className="app">
                 <div style={{ display: "flex", height: "100%", width: "100%" }}>
@@ -124,7 +122,6 @@ const App = () => {
               </div>
             </HashRouter>
           </SidebarProvider>
-        </ThemeProvider>
       )}
     </>
   )

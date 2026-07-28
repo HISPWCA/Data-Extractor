@@ -66,7 +66,7 @@ const ApiFieldsConfig = () => {
   const saving = savingTrackedEntitiesFields || savingEventsFields
 
   return (
-    <div className="p-4 border-2 m-2 dark:border-gray-700 dark:text-gray-200 dark:bg-dark-800/50">
+    <div className="p-4 border-2 m-2">
       <div className="mb-4">
         <TextAreaField
           label="trackedEntitiesFields"

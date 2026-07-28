@@ -270,11 +270,11 @@ const DataExport = () => {
   return (
     <div className="m-1 w-[30%]">
       <div>
-        <div className="p-1 border-2 dark:border-gray-700 dark:bg-dark-800/50 dark:text-gray-200">
+        <div className="p-1 border-2">
           <div className="flex justify-between">
             <div>Select a Mapping</div>
             {selectedMapping && (
-              <div className="border-2 p-1 rounded bg-slate-500 text-white dark:bg-dark-800 dark:text-gray-200 dark:border-gray-600">
+              <div className="border-2 p-1 rounded bg-slate-500 text-white">
                 {data?.mappings.find(
                   (mapping) => mapping.id === selectedMapping,
                 )?.program?.name || "No Mapping Selected yet"}
@@ -338,7 +338,7 @@ const DataExport = () => {
           organisationUnits &&
           organisationUnits.length > 0 && (
             <>
-              <div className="p-1 mt-2 border-2 dark:border-gray-700 dark:bg-dark-800/50 dark:text-gray-200">
+              <div className="p-1 mt-2 border-2">
                 <div>Select an Organisation Unit</div>
                 <OrganisationUnitsTree
                   meOrgUnitId={me.me.organisationUnits[0]?.id}
@@ -351,7 +351,7 @@ const DataExport = () => {
             </>
           )}
 
-        <div className="my-2 border-2 dark:border-gray-700 dark:text-gray-200">
+        <div className="my-2 border-2">
           <div>
             <Radio
               label="Load data from selected organisation unit"
@@ -376,7 +376,7 @@ const DataExport = () => {
         </div>
 
         {selectedTypeOU === "DESCENDANTS" && selectedOrgUnit && (
-          <div className="my-3 border-2 dark:border-gray-700 dark:text-gray-200">
+          <div className="my-3 border-2">
             <div>Select organisation unit level </div>
             <SingleSelect
               selected={selectedOrganisationUnitLevel?.id}
@@ -396,7 +396,7 @@ const DataExport = () => {
         )}
 
         {programAttributes && programAttributes?.length > 0 && (
-          <div className="mt-2 p-1 border-2 flex w-full items-center gap-4 dark:border-gray-700 dark:text-gray-200">
+          <div className="mt-2 p-1 border-2 flex w-full items-center gap-4">
             <div className="w-full ">
               <div>Attributes filter</div>
               <SingleSelect
@@ -424,7 +424,7 @@ const DataExport = () => {
         )}
       </div>
       <>
-        <div className="p-2 border-2 dark:border-gray-700 dark:text-gray-200">
+        <div className="p-2 border-2">
           <div>Select a Date Range</div>
 
           <DateRangePicker

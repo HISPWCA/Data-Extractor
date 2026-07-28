@@ -11,8 +11,8 @@ const Settings = () => {
   const [selectedTab, setSelectedTab] = useState(MAPPINGS_TAB)
 
   return (
-    <div className="dark:text-gray-200">
-      <TabBar className='bg-slate-200 dark:bg-dark-900'>
+    <div>
+      <TabBar className='bg-slate-200'>
         <Tab
           selected={selectedTab === MAPPINGS_TAB}
           onClick={() => setSelectedTab(MAPPINGS_TAB)}

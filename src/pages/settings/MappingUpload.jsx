@@ -170,11 +170,11 @@ const MappingUpload = () => {
   }
 
   return (
-    <div className="dark:text-gray-200">
+    <div>
       <div className="grid grid-cols-5 grid-rows-1 gap-4">
-        <div className='border-2 rounded p-2 dark:border-gray-700 dark:bg-dark-800/50'>
+        <div className='border-2 rounded p-2'>
           <label htmlFor="uploadFile1"
-            className="bg-white dark:bg-dark-800 text-black dark:text-gray-200 text-base rounded w-80- w-70 h-52 flex flex-col items-center justify-center cursor-pointer border-2 border-gray-300 dark:border-gray-600 border-dashed mx-auto font-[sans-serif]">
+            className="bg-white text-black text-base rounded w-80- w-70 h-52 flex flex-col items-center justify-center cursor-pointer border-2 border-gray-300 border-dashed mx-auto font-[sans-serif]">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-8 mb-2 fill-black" viewBox="0 0 32 32">
               <path
                 d="M23.75 11.044a7.99 7.99 0 0 0-15.5-.009A8 8 0 0 0 9 27h3a1 1 0 0 0 0-2H9a6 6 0 0 1-.035-12 1.038 1.038 0 0 0 1.1-.854 5.991 5.991 0 0 1 11.862 0A1.08 1.08 0 0 0 23 13a6 6 0 0 1 0 12h-3a1 1 0 0 0 0 2h3a8 8 0 0 0 .75-15.956z"
@@ -246,7 +246,7 @@ const MappingUpload = () => {
         </div>
 
         <div className="col-span-4">
-          <div className='mt-2 bg-slate-200- rounded border-2 ml-2 dark:border-gray-700 dark:bg-dark-800/50'>
+          <div className='mt-2 bg-slate-200- rounded border-2 ml-2'>
             <div className='flex justify-end m-1'>
               <Tooltip content="Download Mapping Template" >
                 <button onClick={handleTemplateDownload}

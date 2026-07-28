@@ -271,7 +271,7 @@ export const diagnoseExportEmpty = ({
  * Pre-index options by D2 Code for O(1) lookup instead of O(n) loop every time.
  * Returns a Map<string, string> mapping D2 Code -> EMPRESS Code.
  */
-const buildOptionsMap = (options = []) => {
+export const buildOptionsMap = (options = []) => {
   const map = new Map()
   for (const option of options) {
     if (option && option['D2 Code'] && Object.keys(option).length > 0) {
@@ -282,7 +282,7 @@ const buildOptionsMap = (options = []) => {
   return map
 }
 
-const getOptionValue = (entry, optionsMap) => {
+export const getOptionValue = (entry, optionsMap) => {
   if (!entry || !optionsMap || optionsMap.size === 0) return entry
   const value = optionsMap.get(entry)
   return value !== undefined ? value : entry
