@@ -267,17 +267,25 @@ export const diagnoseExportEmpty = ({
   }
 }
 
-const getOptionValue = (entry, options = []) => {
-  let value = entry
-
-  for (const option of options.filter((op) => Object.entries(op).length > 0)) {
-    if (entry && entry.length > 0 && entry === option['D2 Code']) {
-      value = option['EMPRESS Code'] || ''
-      return value === undefined || value === 'undefined' ? '' : value
+/**
+ * Pre-index options by D2 Code for O(1) lookup instead of O(n) loop every time.
+ * Returns a Map<string, string> mapping D2 Code -> EMPRESS Code.
+ */
+const buildOptionsMap = (options = []) => {
+  const map = new Map()
+  for (const option of options) {
+    if (option && option['D2 Code'] && Object.keys(option).length > 0) {
+      const code = option['EMPRESS Code'] || ''
+      map.set(option['D2 Code'], code === 'undefined' ? '' : code)
     }
   }
+  return map
+}
 
-  return value
+const getOptionValue = (entry, optionsMap) => {
+  if (!entry || !optionsMap || optionsMap.size === 0) return entry
+  const value = optionsMap.get(entry)
+  return value !== undefined ? value : entry
 }
 
 const getStageDataElementValue = (
@@ -506,91 +514,114 @@ export const transformTrackedEntitiesToExport = ({
   selectedTypeOU = 'SELECTED',
   selectedOrganisationUnitLevel = null,
 }) => {
+  // Cache mapping-derived values once
   const fields = buildMappingFields(mapping?.mappings)
   const programStages = buildProgramStages(mapping?.mappings)
-  const mappingOptions = mapping?.options || []
+  const optionsMap = buildOptionsMap(mapping?.options)
 
-  const dataToExport = instances
-    .filter((trackedEntity) =>
-      selectedAttribute && selectedAttributeValue
-        ? trackedEntity.attributes?.some(
-          (attribute) =>
-            attribute.attribute === selectedAttribute.id &&
-            attribute.value === selectedAttributeValue
-        )
-        : true
-    )
-    .filter((trackedEntity) =>
-      selectedTypeOU === 'DESCENDANTS' && selectedOrganisationUnitLevel
-        ? organisationUnits.find((ou) => ou.id === trackedEntity.orgUnit)
-          ?.level === selectedOrganisationUnitLevel?.level
-        : true
-    )
-    .reduce((prev, curr) => {
-      const enrollment = findProgramEnrollment(curr.enrollments, programID)
-      const programEvents = getProgramEvents(curr.enrollments, programID)
+  // Pre-filter fields that need resolution (avoid filter in loop)
+  const activeFields = fields.filter((item) => item?.id || item?.formula?.startsWith('FIX'))
 
-      if (programEvents.length === 0) {
-        return prev
+  // Pre-index org units by id for O(1) lookups
+  const ouMap = new Map()
+  for (const ou of organisationUnits) {
+    ouMap.set(ou.id, ou)
+  }
+
+  // Pre-index org unit levels by id for O(1) lookups
+  const ouLevelMap = new Map()
+  for (const lvl of organisationUnitLevels) {
+    ouLevelMap.set(lvl.id, lvl)
+  }
+
+  // Single pass: filter + transform in one iteration
+  const dataToExport = []
+
+  for (const curr of instances) {
+    // Combined attribute filter
+    if (selectedAttribute && selectedAttributeValue) {
+      const matches = curr.attributes?.some(
+        (attr) =>
+          attr.attribute === selectedAttribute.id &&
+          attr.value === selectedAttributeValue
+      )
+      if (!matches) continue
+    }
+
+    // Combined org unit level filter
+    if (selectedTypeOU === 'DESCENDANTS' && selectedOrganisationUnitLevel) {
+      const ou = ouMap.get(curr.orgUnit)
+      if (!ou || ou.level !== selectedOrganisationUnitLevel.level) continue
+    }
+
+    // Get events
+    const enrollment = findProgramEnrollment(curr.enrollments, programID)
+    const programEvents = getProgramEvents(curr.enrollments, programID)
+
+    if (programEvents.length === 0) continue
+
+    // Filter events by stage + date range (eventMatchesProgram is redundant since
+    // getProgramEvents already filters by program)
+    const events = programEvents.filter(
+      (event) =>
+        programStages.has(event.programStage) &&
+        isEventInDateRange(event.occurredAt, startDate, endDate)
+    )
+
+    if (events.length === 0) continue
+
+    for (const event of events) {
+      const element = {
+        eventID: event.event,
+        teiID: event.trackedEntity || curr.trackedEntity,
+        programStageID: event.programStage,
+        enrollmentID: event.enrollment || enrollment?.enrollment,
       }
 
-      const events = filterExportEvents(programEvents, {
-        programID,
-        programStages,
-        startDate,
-        endDate,
-      })
-
-      const rows = events.map((event) => {
-        const element = {
-          eventID: event.event,
-          teiID: event.trackedEntity || curr.trackedEntity,
-          programStageID: event.programStage,
-          enrollmentID: event.enrollment || enrollment?.enrollment,
+      for (const field of activeFields) {
+        if (!field.id && !field.formula?.startsWith('FIX')) {
+          continue
         }
 
-        for (const field of fields.filter((item) => item?.id || item?.formula)) {
-          if (!field.id && !field.formula?.startsWith('FIX')) {
-            continue
-          }
+        element[field.output] = resolveFieldValue({
+          field,
+          curr,
+          event,
+          programID,
+          mappingOptions: optionsMap,
+          organisationUnits,
+          organisationUnitLevels,
+        })
+      }
 
-          element[field.output] = resolveFieldValue({
-            field,
-            curr,
-            event,
-            programID,
-            mappingOptions,
-            organisationUnits,
-            organisationUnitLevels,
-          })
-        }
-
-        return element
-      })
-
-      return [...prev, ...rows]
-    }, [])
+      dataToExport.push(element)
+    }
+  }
 
   return { dataToExport, fields }
 }
 
 export const mergeExportRowsByTei = (dataToExport) => {
   const getValue = (v1, v2) => {
-    if (v1?.length > 0) {
-      return v1
-    }
-    if (v2?.length > 0) {
-      return v2
-    }
+    if (v1?.length > 0) return v1
+    if (v2?.length > 0) return v2
     return ''
   }
 
+  // Use a Map to group rows by teiID in O(n) instead of O(n²)
+  const teiGroups = new Map()
+
+  for (const row of dataToExport) {
+    const teiID = row.teiID
+    if (!teiGroups.has(teiID)) {
+      teiGroups.set(teiID, [])
+    }
+    teiGroups.get(teiID).push(row)
+  }
+
   const mergedRows = []
-  const teiIds = new Set(dataToExport.map((row) => row.teiID))
 
-  for (const teiID of teiIds) {
-    const rows = dataToExport.filter((row) => row.teiID === teiID)
-
+  for (const rows of teiGroups.values()) {
     if (rows.length > 1) {
       const keys = Object.keys(rows[0])
       const mergedRow = {}
