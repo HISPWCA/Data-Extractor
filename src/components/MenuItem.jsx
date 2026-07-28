@@ -1,8 +1,8 @@
-import React from "react";
+import React, { memo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 
-const MenuItem = ({ item, children }) => {
+const MenuItem = memo(({ item, children, collapsed = false }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -19,13 +19,14 @@ const MenuItem = ({ item, children }) => {
 
   return (
     <div
-      className={`menu-item ${activateMenu(constantToLink(item))}`}
+      className={`menu-item ${activateMenu(constantToLink(item))} ${collapsed ? 'justify-center px-0' : ''}`}
       onClick={() => handleClickMenu(constantToLink(item))}
+      title={collapsed ? constantToTitle(item) : undefined}
     >
-      <span>{children}</span>
-      <span style={{ marginLeft: "10px" }}>{constantToTitle(item)}</span>
+      <span className="flex-shrink-0">{children}</span>
+      {!collapsed && <span style={{ marginLeft: "10px" }}>{constantToTitle(item)}</span>}
     </div>
   );
-};
+});
 
 export default MenuItem;

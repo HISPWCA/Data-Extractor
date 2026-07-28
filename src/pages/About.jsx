@@ -7,18 +7,18 @@ export default () => {
       <div className="max-w-screen-xl mx-auto px-4 py-8 md:px-8">
         <div className="max-w-2xl mx-auto space-y-8">
           <div className="space-y-3 text-center">
-          <h3 className="text-gray-800 text-4xl font-semibold sm:text-5xl">
+          <h3 className="text-gray-800 dark:text-gray-100 text-4xl font-semibold sm:text-5xl">
             Data Extractor
           </h3>
 
-          <p className="text-gray-600">Version {process.env.REACT_APP_VERSION}</p>
+          <p className="text-gray-600 dark:text-gray-400">Version {process.env.REACT_APP_VERSION}</p>
 
-          <p className="text-gray-600">
+          <p className="text-gray-600 dark:text-gray-400">
             By{" "}
             <a
               target="_blank"
               href="https://hispwca.org/hispwca"
-              className="text-indigo-600 duration-150 hover:text-indigo-400 font-medium inline-flex items-center gap-x-1"
+              className="text-indigo-600 dark:text-indigo-400 duration-150 hover:text-indigo-400 font-medium inline-flex items-center gap-x-1"
             >
               Hisp WCA
               <svg
@@ -38,15 +38,15 @@ export default () => {
           </div>
 
           <section className="text-left">
-            <h4 className="text-gray-800 text-xl font-semibold mb-4">Release notes</h4>
+            <h4 className="text-gray-800 dark:text-gray-200 text-xl font-semibold mb-4">Release notes</h4>
             <div className="space-y-6">
               {RELEASE_NOTES.map(({ version, date, items }) => (
-                <article key={version} className="rounded-lg bg-white p-4 shadow-sm">
+                <article key={version} className="rounded-lg bg-white dark:bg-dark-800 p-4 shadow-sm dark:border dark:border-gray-700">
                   <header className="mb-2 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                    <h5 className="text-gray-800 font-medium">Version {version}</h5>
-                    <span className="text-sm text-gray-500">{date}</span>
+                    <h5 className="text-gray-800 dark:text-gray-200 font-medium">Version {version}</h5>
+                    <span className="text-sm text-gray-500 dark:text-gray-400">{date}</span>
                   </header>
-                  <ul className="list-disc space-y-1 pl-5 text-gray-600">
+                  <ul className="list-disc space-y-1 pl-5 text-gray-600 dark:text-gray-400">
                     {items.map((item) => (
                       <li key={item}>{item}</li>
                     ))}
