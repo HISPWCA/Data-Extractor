@@ -1,18 +1,24 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 import AppRoutes from '../utils/app.routes'
 
 const PageContent = () => {
+  const location = useLocation()
+
   return (
     <div
+      className='my-scrollable bg-slate-200'
       style={{
-        height: "100vh-80px",
-        width: "100%",
-        overflowY: "auto",
-        padding: "20px",
+        flex: 1,
+        height: '100%',
+        overflowY: 'auto',
+        overflowX: 'hidden',
+        padding: '20px',
       }}
-      className='bg-slate-200'
     >
-      {AppRoutes}
+      <div key={location.pathname} className="animate-fade-in">
+        {AppRoutes}
+      </div>
     </div>
   )
 }

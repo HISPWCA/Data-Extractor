@@ -113,15 +113,15 @@ const App = () => {
 
       {dataStoreInitialised && (
         <SidebarProvider>
-            <HashRouter>
-              <div className="app">
-                <div style={{ display: "flex", height: "100%", width: "100%" }}>
-                  <Menu />
-                  <PageContent />
-                </div>
+          <HashRouter>
+            <div className="app">
+              <div style={{ display: "flex", height: "100%", width: "100%" }}>
+                <Menu />
+                <PageContent />
               </div>
-            </HashRouter>
-          </SidebarProvider>
+            </div>
+          </HashRouter>
+        </SidebarProvider>
       )}
     </>
   )

@@ -12,16 +12,28 @@ const TRACKED_ENTITIES_QUERY = {
       endDate,
       ouMode,
       trackedEntitiesFields,
-    }) => ({
-      fields: trackedEntitiesFields || DEFAULT_TRACKED_ENTITIES_FIELDS,
-      program,
-      orgUnit,
-      eventOccuredAfter: startDate,
-      eventOccuredBefore: endDate,
-      skipPaging: true,
-      ouMode: ouMode ? ouMode : 'SELECTED',
-      filter: urlFilter,
-    }),
+      page,
+      pageSize,
+    }) => {
+      const params = {
+        fields: trackedEntitiesFields || DEFAULT_TRACKED_ENTITIES_FIELDS,
+        program,
+        orgUnit,
+        eventOccuredAfter: startDate,
+        eventOccuredBefore: endDate,
+        ouMode: ouMode ? ouMode : 'SELECTED',
+        filter: urlFilter,
+      }
+      // When paginating, set page/pageSize and disable skipPaging
+      if (page != null && pageSize != null) {
+        params.page = page
+        params.pageSize = pageSize
+        params.skipPaging = false
+      } else {
+        params.skipPaging = true
+      }
+      return params
+    },
   },
 }
 
