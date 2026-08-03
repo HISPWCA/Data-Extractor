@@ -11,7 +11,8 @@ const PageContent = () => {
       style={{
         flex: 1,
         height: '100%',
-        overflowY: 'auto',
+        // overflowY: 'auto',
+        // overflowY: 'hidden',
         overflowX: 'hidden',
         padding: '20px',
       }}
