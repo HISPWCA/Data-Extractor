@@ -16,8 +16,6 @@ import {
   isOutdatedTrackedEntitiesFields,
 } from './utils/apiFields.defaults'
 
-import 'react-date-range/dist/styles.css'
-import 'react-date-range/dist/theme/default.css'
 import './App.css'
 import './input.css'
 import './tailwind.css'
